@@ -28,15 +28,15 @@ public class StageLoader : MonoBehaviour
 
     public void LoadNextStage()
     {
-        StartCoroutine(LoadNextStageByIndex(SceneManager.GetActiveScene().buildIndex + 1));
+        StartCoroutine(LoadByIndex(SceneManager.GetActiveScene().buildIndex + 1));
     }
 
     public void LoadStageByIndex(int sceneIndex)
     {
-        StartCoroutine(LoadNextStageByIndex(sceneIndex));
+        StartCoroutine(LoadByIndex(sceneIndex));
     }
 
-    IEnumerator LoadNextStageByIndex(int sceneIndex)
+    IEnumerator LoadByIndex(int sceneIndex)
     {
         crossfadeAnimator.SetTrigger("Crossfade");
         yield return new WaitForSecondsRealtime(transitionTime);

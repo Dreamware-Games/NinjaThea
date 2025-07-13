@@ -7,25 +7,28 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI version;
 
+    private StageLoader stageLoader;
+
     private void Start()
     {
         Cursor.visible = true;
         if (version != null) version.text = Application.version;
-    }
-
-    public void LoadScene(string sceneName)
-    {
-        SceneManager.LoadScene(sceneName);
+        stageLoader = FindFirstObjectByType<StageLoader>();
     }
 
     public void ReloadCurrentScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        stageLoader.LoadStageByIndex(SceneManager.GetActiveScene().buildIndex);
     }
 
     public void LoadNextScene()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        stageLoader.LoadNextStage();
+    }
+
+    public void LoadScene(int index)
+    {
+        stageLoader.LoadStageByIndex(index);
     }
 
     public void QuitGame()
