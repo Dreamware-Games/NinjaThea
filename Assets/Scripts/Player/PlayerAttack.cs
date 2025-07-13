@@ -16,6 +16,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void Update()
     {
+        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused) return;
         if (!gameObject.GetComponent<PlayerLife>().IsDead())
         {
             if (Time.time >= nextAttackTime)

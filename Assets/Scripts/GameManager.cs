@@ -8,8 +8,8 @@ public class GameManager : MonoBehaviour
 {
 
     public static GameManager Instance;
-    public bool tasksCompleted;
-    public bool gamePlaying;
+    [HideInInspector] public bool TasksCompleted;
+    [HideInInspector] public bool GamePlaying;
 
     [SerializeField] private AudioSource backgroundMusic;
     [SerializeField] private GameObject itemsContainer;
@@ -85,15 +85,15 @@ public class GameManager : MonoBehaviour
         else
             stageText.text = customStageText;
 
-        tasksCompleted = false;
-        gamePlaying = false;
+        TasksCompleted = false;
+        GamePlaying = false;
         Cursor.visible = false;
         StartCoroutine(CountdownToBeginGame());
     }
 
     private void Update()
     {
-        if (gamePlaying)
+        if (GamePlaying)
         {
             elapsedTime = Time.time - startTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
@@ -127,7 +127,7 @@ public class GameManager : MonoBehaviour
 
     private void BeginGame()
     {
-        gamePlaying = true;
+        GamePlaying = true;
         startTime = Time.time;
         backgroundMusic.gameObject.SetActive(true);
     }
@@ -172,7 +172,7 @@ public class GameManager : MonoBehaviour
 
     private void UpdateTasksCompleted()
     {
-        tasksCompleted = (numItemsCollected >= numTotalItems) && (numdEnemiesKilled >= numTotalEnemies);
+        TasksCompleted = (numItemsCollected >= numTotalItems) && (numdEnemiesKilled >= numTotalEnemies);
     }
 
     public void StageComplete()
@@ -193,7 +193,7 @@ public class GameManager : MonoBehaviour
 
     private void PrepareStageCompletion(TextMeshProUGUI completedTimeText)
     {
-        gamePlaying = false;
+        GamePlaying = false;
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         Cursor.visible = true;
         backgroundMusic.gameObject.SetActive(false);

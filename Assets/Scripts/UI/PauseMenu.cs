@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
 
     private void Update()
     {
-        if (!GameManager.Instance.gamePlaying) return;
+        if (!GameManager.Instance.GamePlaying) return;
         if (Input.GetButtonDown("Pause"))
         {
             if (Paused) Resume();

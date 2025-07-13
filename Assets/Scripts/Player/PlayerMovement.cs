@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (GameManager.Instance.gamePlaying && !PauseMenu.Paused)
+        if (GameManager.Instance.GamePlaying && !PauseMenu.Paused)
         {
             horizontalMove = Input.GetAxisRaw("Horizontal");
             if (isGrounded())

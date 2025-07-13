@@ -12,7 +12,7 @@ public class FinishLine : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player") && GameManager.Instance.tasksCompleted)
+        if (collision.gameObject.CompareTag("Player") && GameManager.Instance.TasksCompleted)
         {
             if (!isFinished)
             {
@@ -39,7 +39,8 @@ public class FinishLine : MonoBehaviour
         return isFinalStage;
     }
 
-    public bool IsFinished() {
+    public bool IsFinished()
+    {
         return isFinished;
     }
 
