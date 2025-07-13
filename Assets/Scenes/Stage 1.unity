@@ -916,8 +916,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 27623649
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!1 &484339180
 GameObject:
@@ -1602,8 +1602,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 27623649
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &706428880 stripped
 MonoBehaviour:
@@ -2978,8 +2978,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 27623649
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!1001 &1617334625
 PrefabInstance:
@@ -9021,8 +9021,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 27623649
+  m_SortingOrder: 4
   m_TargetDisplay: 0
 --- !u!114 &1851573529 stripped
 MonoBehaviour:

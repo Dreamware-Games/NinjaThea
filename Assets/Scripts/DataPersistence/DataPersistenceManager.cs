@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.IO;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -18,9 +19,33 @@ public class DataPersistenceManager : MonoBehaviour
             return;
         }
         Instance = this;
-        this.dataPersister = new FileDataPersister();
-        LoadData();
+        MigrateOldSaveIfNeeded();
         DontDestroyOnLoad(gameObject);
+    }
+
+    private void Start()
+    {
+        dataPersister = new FileDataPersister();
+        LoadData();
+    }
+
+    private void MigrateOldSaveIfNeeded()
+    {
+        string newFilePath = Path.Combine(Application.persistentDataPath, "gamedata.ninja");
+        string oldFilePath = Path.Combine(Application.persistentDataPath.Replace("Dreamware Games", "Reza Mirzaei"), "gamedata.ninja");
+        if (File.Exists(oldFilePath) && !File.Exists(newFilePath))
+        {
+            try
+            {
+                Directory.CreateDirectory(Path.GetDirectoryName(newFilePath));
+                File.Copy(oldFilePath, newFilePath);
+                Debug.Log("Migrated old save file from old config to Dreamware Games.");
+            }
+            catch (System.Exception e)
+            {
+                Debug.LogError("Failed to migrate save file: " + e);
+            }
+        }
     }
 
     public void SaveData(LevelData levelData)
@@ -46,5 +71,4 @@ public class DataPersistenceManager : MonoBehaviour
             SaveGameData = new GameData();
         }
     }
-
 }
