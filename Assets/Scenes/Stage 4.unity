@@ -9878,18 +9878,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 147286062, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 8256643196118948323}
-    - target: {fileID: 147286062, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ReloadCurrentScene
-      objectReference: {fileID: 0}
-    - target: {fileID: 147286062, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level 3
-      objectReference: {fileID: 0}
     - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -9901,18 +9889,6 @@ PrefabInstance:
     - target: {fileID: 597149693, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
       value: End Scene
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1121728420}
-    - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: LoadNextStage
-      objectReference: {fileID: 0}
-    - target: {fileID: 1258476176, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level 4
       objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748516, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Name
@@ -10031,17 +10007,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8256643196118948323 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 429818704, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
-  m_PrefabInstance: {fileID: 8256643196118948320}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb89af82f95b19d46aecab5f346df480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &8256643196118948324 stripped
