@@ -6,13 +6,17 @@ public class MainMenu : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI version;
+    [SerializeField] private bool stage; // Stupid because this script is also used in stages :(
 
     private StageLoader stageLoader;
 
     private void Start()
     {
-        Cursor.visible = true;
-        if (version != null) version.text = Application.version;
+        if (!stage)
+        {
+            Cursor.visible = true;
+            if (version != null) version.text = Application.version;
+        }
         stageLoader = FindFirstObjectByType<StageLoader>();
     }
 

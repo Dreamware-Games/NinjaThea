@@ -12,7 +12,6 @@ public class PauseMenu : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = false; // Stupid :(
         stageLoader = FindFirstObjectByType<StageLoader>();
     }
 
