@@ -1,0 +1,2535 @@
+fileFormatVersion: 2
+guid: 0f10ad1c3ab260c4ea1bf32b78d651c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4786550047084116592
+    second: Main Logo White_0
+  - first:
+      213: -6804721473891097444
+    second: Main Logo White_1
+  - first:
+      213: 2896876574493247262
+    second: Main Logo White_2
+  - first:
+      213: -1979161466782832218
+    second: Main Logo White_3
+  - first:
+      213: -6870321289738234150
+    second: Main Logo White_4
+  - first:
+      213: 1200569214322282750
+    second: Main Logo White_5
+  - first:
+      213: -7155927321101362317
+    second: Main Logo White_6
+  - first:
+      213: 6703025890386098462
+    second: Main Logo White_7
+  - first:
+      213: -8515128858063238620
+    second: Main Logo White_8
+  - first:
+      213: 1901954941472056559
+    second: Main Logo White_9
+  - first:
+      213: 6674062020314519978
+    second: Main Logo White_10
+  - first:
+      213: 1542869301352121199
+    second: Main Logo White_11
+  - first:
+      213: 1207870847163375053
+    second: Main Logo White_12
+  - first:
+      213: 2687526017886993413
+    second: Main Logo White_13
+  - first:
+      213: -5581197404021223474
+    second: Main Logo White_14
+  - first:
+      213: 1699636110879689111
+    second: Main Logo White_15
+  - first:
+      213: 1741909515831400855
+    second: Main Logo White_16
+  - first:
+      213: -5569564131274919486
+    second: Main Logo White_17
+  - first:
+      213: -2117285956864767107
+    second: Main Logo White_18
+  - first:
+      213: -3102287277622007593
+    second: Main Logo White_19
+  - first:
+      213: 4299114778731580115
+    second: Main Logo White_20
+  - first:
+      213: 5886401439481757789
+    second: Main Logo White_21
+  - first:
+      213: -2431586387523699798
+    second: Main Logo White_22
+  - first:
+      213: -1979224273903122409
+    second: Main Logo White_23
+  - first:
+      213: 8152134652785526914
+    second: Main Logo White_24
+  - first:
+      213: -8007792292648558736
+    second: Main Logo White_25
+  - first:
+      213: -2314148637967351733
+    second: Main Logo White_26
+  - first:
+      213: 7673945245417686270
+    second: Main Logo White_27
+  - first:
+      213: 7661406663702093525
+    second: Main Logo White_28
+  - first:
+      213: 221846464261225775
+    second: Main Logo White_29
+  - first:
+      213: -273012873841580858
+    second: Main Logo White_30
+  - first:
+      213: 1190344882819402677
+    second: Main Logo White_31
+  - first:
+      213: -8204937116010583302
+    second: Main Logo White_32
+  - first:
+      213: 5321109335077831263
+    second: Main Logo White_33
+  - first:
+      213: 3429915598885052085
+    second: Main Logo White_34
+  - first:
+      213: -5711379836545748055
+    second: Main Logo White_35
+  - first:
+      213: -7906607696040055753
+    second: Main Logo White_36
+  - first:
+      213: -1429696893709640608
+    second: Main Logo White_37
+  - first:
+      213: -6326721095605744201
+    second: Main Logo White_38
+  - first:
+      213: -7497141361315416062
+    second: Main Logo White_39
+  - first:
+      213: -694762237510562726
+    second: Main Logo White_40
+  - first:
+      213: 6256439258776589028
+    second: Main Logo White_41
+  - first:
+      213: 821175449241343822
+    second: Main Logo White_42
+  - first:
+      213: -5640173530420778944
+    second: Main Logo White_43
+  - first:
+      213: -5283435876356942634
+    second: Main Logo White_44
+  - first:
+      213: -5206191297013584039
+    second: Main Logo White_45
+  - first:
+      213: 5632395804405621923
+    second: Main Logo White_46
+  - first:
+      213: 6109890061288059768
+    second: Main Logo White_47
+  - first:
+      213: -9204420154727711876
+    second: Main Logo White_48
+  - first:
+      213: 7084954412461649631
+    second: Main Logo White_49
+  - first:
+      213: -1414936369984490919
+    second: Main Logo White_50
+  - first:
+      213: 8321780294437020684
+    second: Main Logo White_51
+  - first:
+      213: -2430885726732935404
+    second: Main Logo White_52
+  - first:
+      213: 4531553342528052426
+    second: Main Logo White_53
+  - first:
+      213: 4664074138453824198
+    second: Main Logo White_54
+  - first:
+      213: 5025357474013240357
+    second: Main Logo White_55
+  - first:
+      213: 1005197739226768052
+    second: Main Logo White_56
+  - first:
+      213: -5606396540471756519
+    second: Main Logo White_57
+  - first:
+      213: -9165794137290838965
+    second: Main Logo White_58
+  - first:
+      213: -1201528060813996179
+    second: Main Logo White_59
+  - first:
+      213: -6035621930057545690
+    second: Main Logo White_60
+  - first:
+      213: -6520126689988742889
+    second: Main Logo White_61
+  - first:
+      213: -1692233925549902408
+    second: Main Logo White_62
+  - first:
+      213: 7962172426628034588
+    second: Main Logo White_63
+  - first:
+      213: 4923703552897091131
+    second: Main Logo White_64
+  - first:
+      213: 7020030685347333494
+    second: Main Logo White_65
+  - first:
+      213: 2427722305811455358
+    second: Main Logo White_66
+  - first:
+      213: -2510047225103997372
+    second: Main Logo White_67
+  - first:
+      213: -8744053785516448028
+    second: Main Logo White_68
+  - first:
+      213: 8339447690450869542
+    second: Main Logo White_69
+  - first:
+      213: -2665616646941960367
+    second: Main Logo White_70
+  - first:
+      213: 3253313925574454448
+    second: Main Logo White_71
+  - first:
+      213: -4421981365323923605
+    second: Main Logo White_72
+  - first:
+      213: -7333886794130803215
+    second: Main Logo White_73
+  - first:
+      213: 8874877621875687214
+    second: Main Logo White_74
+  - first:
+      213: -4426156172354188195
+    second: Main Logo White_75
+  - first:
+      213: -3004671514528668971
+    second: Main Logo White_76
+  - first:
+      213: -1838587164503449931
+    second: Main Logo White_77
+  - first:
+      213: 1152977957899495064
+    second: Main Logo White_78
+  - first:
+      213: 8367132702295256278
+    second: Main Logo White_79
+  - first:
+      213: 2501868356148902831
+    second: Main Logo White_80
+  - first:
+      213: 1314951423188919575
+    second: Main Logo White_81
+  - first:
+      213: 3198706061416230919
+    second: Main Logo White_82
+  - first:
+      213: 2167600693659667638
+    second: Main Logo White_83
+  - first:
+      213: -1729159105920181306
+    second: Main Logo White_84
+  - first:
+      213: -5953681214679940326
+    second: Main Logo White_85
+  - first:
+      213: -745607450276673130
+    second: Main Logo White_86
+  - first:
+      213: -7762347720396178827
+    second: Main Logo White_87
+  - first:
+      213: 915427791446628641
+    second: Main Logo White_88
+  - first:
+      213: -8568408474190058818
+    second: Main Logo White_89
+  - first:
+      213: -4053503022998987246
+    second: Main Logo White_90
+  - first:
+      213: 3973857201136211887
+    second: Main Logo White_91
+  - first:
+      213: -5808955943989787214
+    second: Main Logo White_92
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Main Logo White_0
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 1110
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07af31858ed3d6240800000000000000
+      internalID: 4786550047084116592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1079
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c94af395fd5c091a0800000000000000
+      internalID: -6804721473891097444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_2
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1062
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1702dc65e5c33820800000000000000
+      internalID: 2896876574493247262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1062
+        width: 68
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9a44bc12b9884e0800000000000000
+      internalID: -1979161466782832218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_4
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 1030
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad659500037b7a0a0800000000000000
+      internalID: -6870321289738234150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_5
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1030
+        width: 62
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef013fbe65749a010800000000000000
+      internalID: 1200569214322282750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_6
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 1030
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b9d33e30a01bc90800000000000000
+      internalID: -7155927321101362317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_7
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1047
+        width: 17
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19b5bc788ee50d50800000000000000
+      internalID: 6703025890386098462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_8
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 976
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42a867e2b6f24d980800000000000000
+      internalID: -8515128858063238620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_9
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 970
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe4ad3931f9156a10800000000000000
+      internalID: 1901954941472056559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_10
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 974
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa9d5c9fb080f9c50800000000000000
+      internalID: 6674062020314519978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_11
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 965
+        width: 21
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63c2f1847f596510800000000000000
+      internalID: 1542869301352121199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_12
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 943
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcd19bbc22833c010800000000000000
+      internalID: 1207870847163375053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_13
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 916
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50c36c49ca20c4520800000000000000
+      internalID: 2687526017886993413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_14
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 867
+        width: 316
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecf8bff088a9b82b0800000000000000
+      internalID: -5581197404021223474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_15
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 883
+        width: 30
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799096ca902569710800000000000000
+      internalID: 1699636110879689111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_16
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 872
+        width: 38
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 799d002c9718c2810800000000000000
+      internalID: 1741909515831400855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_17
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 872
+        width: 64
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1f9917eeee4b2b0800000000000000
+      internalID: -5569564131274919486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_18
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 883
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7b072dd3a3ed92e0800000000000000
+      internalID: -2117285956864767107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_19
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 883
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d8602a582672f4d0800000000000000
+      internalID: -3102287277622007593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_20
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 883
+        width: 23
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3da8de21d1689ab30800000000000000
+      internalID: 4299114778731580115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_21
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 685
+        width: 180
+        height: 213
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5088a5fbe2b0b150800000000000000
+      internalID: 5886401439481757789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_22
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 824
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aab79fa4015414ed0800000000000000
+      internalID: -2431586387523699798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_23
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 827
+        width: 39
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7188c2f52026884e0800000000000000
+      internalID: -1979224273903122409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_24
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 824
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2880f6c5643322170800000000000000
+      internalID: 8152134652785526914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_25
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 824
+        width: 163
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07f5291465b9ed090800000000000000
+      internalID: -8007792292648558736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_26
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 685
+        width: 84
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40808c131e72efd0800000000000000
+      internalID: -2314148637967351733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_27
+      rect:
+        serializedVersion: 2
+        x: 1096
+        y: 682
+        width: 164
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef44beada845f7a60800000000000000
+      internalID: 7673945245417686270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_28
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 682
+        width: 170
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5de16cdc4c8c25a60800000000000000
+      internalID: 7661406663702093525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_29
+      rect:
+        serializedVersion: 2
+        x: 1495
+        y: 685
+        width: 268
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d77f01f28241300800000000000000
+      internalID: 221846464261225775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_30
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 685
+        width: 241
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c4609bdc30163cf0800000000000000
+      internalID: -273012873841580858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_31
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 682
+        width: 170
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bb87ac3d54f48010800000000000000
+      internalID: 1190344882819402677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_32
+      rect:
+        serializedVersion: 2
+        x: 2253
+        y: 685
+        width: 84
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afa65c32a25322e80800000000000000
+      internalID: -8204937116010583302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_33
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 682
+        width: 164
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5244507fb068d940800000000000000
+      internalID: 5321109335077831263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_34
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 731
+        width: 17
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5be5d119012899f20800000000000000
+      internalID: 3429915598885052085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_35
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 726
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a3bc518c4a1db0b0800000000000000
+      internalID: -5711379836545748055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_36
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 607
+        width: 285
+        height: 214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ca9230136164290800000000000000
+      internalID: -7906607696040055753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_37
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 725
+        width: 31
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06c15f10042b82ce0800000000000000
+      internalID: -1429696893709640608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_38
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 725
+        width: 44
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd03771fa8f238a0800000000000000
+      internalID: -6326721095605744201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_39
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 682
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 208f7e747adc4f790800000000000000
+      internalID: -7497141361315416062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_40
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 666
+        width: 21
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cc3dd0d65bb56f0800000000000000
+      internalID: -694762237510562726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_41
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 666
+        width: 40
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e2df2a9b5653d650800000000000000
+      internalID: 6256439258776589028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_42
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 666
+        width: 145
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e475d4668b6656b00800000000000000
+      internalID: 821175449241343822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_43
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 666
+        width: 35
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04865b79e041ab1b0800000000000000
+      internalID: -5640173530420778944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_44
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 666
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d4903430177da6b0800000000000000
+      internalID: -5283435876356942634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_45
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 671
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f66c45994efb7b0800000000000000
+      internalID: -5206191297013584039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_46
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 584
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a46ff3742a4a2e40800000000000000
+      internalID: 5632395804405621923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_47
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 519
+        width: 431
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873b3cf93a0bac450800000000000000
+      internalID: 6109890061288059768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_48
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 480
+        width: 155
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b320ae2a4534080800000000000000
+      internalID: -9204420154727711876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_49
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 479
+        width: 126
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdeec9c1080d25260800000000000000
+      internalID: 7084954412461649631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_50
+      rect:
+        serializedVersion: 2
+        x: 1888
+        y: 481
+        width: 197
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9523b4f3ed22d5ce0800000000000000
+      internalID: -1414936369984490919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_51
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 479
+        width: 122
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c04a3cc4617ec7370800000000000000
+      internalID: 8321780294437020684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_52
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 479
+        width: 96
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f14889f42c34ed0800000000000000
+      internalID: -2430885726732935404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_53
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 536
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acc5e1e71cf43ee30800000000000000
+      internalID: 4531553342528052426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_54
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 524
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c250a4b7be1ab040800000000000000
+      internalID: 4664074138453824198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_55
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 525
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cd9e34ff7adb540800000000000000
+      internalID: 5025357474013240357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_56
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 519
+        width: 24
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b223af940e23fd00800000000000000
+      internalID: 1005197739226768052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_57
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 519
+        width: 103
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919b337ec041232b0800000000000000
+      internalID: -5606396540471756519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_58
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 519
+        width: 32
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4ceb6a6bce8cc080800000000000000
+      internalID: -9165794137290838965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_59
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 525
+        width: 16
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f848b3890535fe0800000000000000
+      internalID: -1201528060813996179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_60
+      rect:
+        serializedVersion: 2
+        x: 920
+        y: 518
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628cc5c25d92d3ca0800000000000000
+      internalID: -6035621930057545690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_61
+      rect:
+        serializedVersion: 2
+        x: 964
+        y: 518
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7117da0125bd385a0800000000000000
+      internalID: -6520126689988742889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_62
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 340
+        width: 685
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5bbb6e53af388e0800000000000000
+      internalID: -1692233925549902408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_63
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 508
+        width: 27
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c10f299f2a15f7e60800000000000000
+      internalID: 7962172426628034588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_64
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 464
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3682c16b42845440800000000000000
+      internalID: 4923703552897091131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_65
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 459
+        width: 34
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6754870f6b82c6160800000000000000
+      internalID: 7020030685347333494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_66
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 471
+        width: 35
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7d1f23139001b120800000000000000
+      internalID: 2427722305811455358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_67
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 464
+        width: 30
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446a83af8558a2dd0800000000000000
+      internalID: -2510047225103997372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_68
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 443
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e6e169f861e6a680800000000000000
+      internalID: -8744053785516448028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_69
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 459
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d964c7d7babb370800000000000000
+      internalID: 8339447690450869542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_70
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 459
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15718ab58c3d10bd0800000000000000
+      internalID: -2665616646941960367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_71
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 459
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0bc62bc47c7162d20800000000000000
+      internalID: 3253313925574454448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_72
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 407
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f787c7067f1a2c0800000000000000
+      internalID: -4421981365323923605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_73
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 410
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f5b7ec31dcc83a90800000000000000
+      internalID: -7333886794130803215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_74
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 405
+        width: 63
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fb6fc0d26e92b70800000000000000
+      internalID: 8874877621875687214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_75
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 421
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5c0d6a79622392c0800000000000000
+      internalID: -4426156172354188195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_76
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 355
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d2a8cd4d234d46d0800000000000000
+      internalID: -3004671514528668971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_77
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 351
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bedd2317b60c76e0800000000000000
+      internalID: -1838587164503449931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_78
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 356
+        width: 27
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 896647e0853300010800000000000000
+      internalID: 1152977957899495064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_79
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 340
+        width: 25
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dcecdc9cd60e1470800000000000000
+      internalID: 8367132702295256278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_80
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 312
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabbb03b30c68b220800000000000000
+      internalID: 2501868356148902831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_81
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 317
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 715e11c3a55af3210800000000000000
+      internalID: 1314951423188919575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_82
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 128
+        width: 735
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7007a932736146c20800000000000000
+      internalID: 3198706061416230919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_83
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 296
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc8970b85dd41e10800000000000000
+      internalID: 2167600693659667638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_84
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 116
+        width: 22
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cbde7364fac008e0800000000000000
+      internalID: -1729159105920181306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_85
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 105
+        width: 59
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13061daa76406da0800000000000000
+      internalID: -5953681214679940326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_86
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 78
+        width: 222
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 699cf5079f117a5f0800000000000000
+      internalID: -745607450276673130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_87
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 105
+        width: 17
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57af8beffd9964490800000000000000
+      internalID: -7762347720396178827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_88
+      rect:
+        serializedVersion: 2
+        x: 741
+        y: 18
+        width: 62
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12952b6e9b044bc00800000000000000
+      internalID: 915427791446628641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_89
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 54
+        width: 78
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eba647dd3e5e61980800000000000000
+      internalID: -8568408474190058818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_90
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 29
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21e5c2a1a701fb7c0800000000000000
+      internalID: -4053503022998987246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_91
+      rect:
+        serializedVersion: 2
+        x: 699
+        y: 41
+        width: 18
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa71adde11af52730800000000000000
+      internalID: 3973857201136211887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Main Logo White_92
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 52
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b5489a9851726fa0800000000000000
+      internalID: -5808955943989787214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Main Logo White_0: 4786550047084116592
+      Main Logo White_1: -6804721473891097444
+      Main Logo White_10: 6674062020314519978
+      Main Logo White_11: 1542869301352121199
+      Main Logo White_12: 1207870847163375053
+      Main Logo White_13: 2687526017886993413
+      Main Logo White_14: -5581197404021223474
+      Main Logo White_15: 1699636110879689111
+      Main Logo White_16: 1741909515831400855
+      Main Logo White_17: -5569564131274919486
+      Main Logo White_18: -2117285956864767107
+      Main Logo White_19: -3102287277622007593
+      Main Logo White_2: 2896876574493247262
+      Main Logo White_20: 4299114778731580115
+      Main Logo White_21: 5886401439481757789
+      Main Logo White_22: -2431586387523699798
+      Main Logo White_23: -1979224273903122409
+      Main Logo White_24: 8152134652785526914
+      Main Logo White_25: -8007792292648558736
+      Main Logo White_26: -2314148637967351733
+      Main Logo White_27: 7673945245417686270
+      Main Logo White_28: 7661406663702093525
+      Main Logo White_29: 221846464261225775
+      Main Logo White_3: -1979161466782832218
+      Main Logo White_30: -273012873841580858
+      Main Logo White_31: 1190344882819402677
+      Main Logo White_32: -8204937116010583302
+      Main Logo White_33: 5321109335077831263
+      Main Logo White_34: 3429915598885052085
+      Main Logo White_35: -5711379836545748055
+      Main Logo White_36: -7906607696040055753
+      Main Logo White_37: -1429696893709640608
+      Main Logo White_38: -6326721095605744201
+      Main Logo White_39: -7497141361315416062
+      Main Logo White_4: -6870321289738234150
+      Main Logo White_40: -694762237510562726
+      Main Logo White_41: 6256439258776589028
+      Main Logo White_42: 821175449241343822
+      Main Logo White_43: -5640173530420778944
+      Main Logo White_44: -5283435876356942634
+      Main Logo White_45: -5206191297013584039
+      Main Logo White_46: 5632395804405621923
+      Main Logo White_47: 6109890061288059768
+      Main Logo White_48: -9204420154727711876
+      Main Logo White_49: 7084954412461649631
+      Main Logo White_5: 1200569214322282750
+      Main Logo White_50: -1414936369984490919
+      Main Logo White_51: 8321780294437020684
+      Main Logo White_52: -2430885726732935404
+      Main Logo White_53: 4531553342528052426
+      Main Logo White_54: 4664074138453824198
+      Main Logo White_55: 5025357474013240357
+      Main Logo White_56: 1005197739226768052
+      Main Logo White_57: -5606396540471756519
+      Main Logo White_58: -9165794137290838965
+      Main Logo White_59: -1201528060813996179
+      Main Logo White_6: -7155927321101362317
+      Main Logo White_60: -6035621930057545690
+      Main Logo White_61: -6520126689988742889
+      Main Logo White_62: -1692233925549902408
+      Main Logo White_63: 7962172426628034588
+      Main Logo White_64: 4923703552897091131
+      Main Logo White_65: 7020030685347333494
+      Main Logo White_66: 2427722305811455358
+      Main Logo White_67: -2510047225103997372
+      Main Logo White_68: -8744053785516448028
+      Main Logo White_69: 8339447690450869542
+      Main Logo White_7: 6703025890386098462
+      Main Logo White_70: -2665616646941960367
+      Main Logo White_71: 3253313925574454448
+      Main Logo White_72: -4421981365323923605
+      Main Logo White_73: -7333886794130803215
+      Main Logo White_74: 8874877621875687214
+      Main Logo White_75: -4426156172354188195
+      Main Logo White_76: -3004671514528668971
+      Main Logo White_77: -1838587164503449931
+      Main Logo White_78: 1152977957899495064
+      Main Logo White_79: 8367132702295256278
+      Main Logo White_8: -8515128858063238620
+      Main Logo White_80: 2501868356148902831
+      Main Logo White_81: 1314951423188919575
+      Main Logo White_82: 3198706061416230919
+      Main Logo White_83: 2167600693659667638
+      Main Logo White_84: -1729159105920181306
+      Main Logo White_85: -5953681214679940326
+      Main Logo White_86: -745607450276673130
+      Main Logo White_87: -7762347720396178827
+      Main Logo White_88: 915427791446628641
+      Main Logo White_89: -8568408474190058818
+      Main Logo White_9: 1901954941472056559
+      Main Logo White_90: -4053503022998987246
+      Main Logo White_91: 3973857201136211887
+      Main Logo White_92: -5808955943989787214
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
