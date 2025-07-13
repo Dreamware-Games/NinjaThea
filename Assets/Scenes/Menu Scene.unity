@@ -1937,6 +1937,7 @@ MonoBehaviour:
   - {fileID: 720410373}
   - {fileID: 2136524678}
   - {fileID: 1168158838}
+  stageLoader: {fileID: 1868293677}
 --- !u!1 &800205787
 GameObject:
   m_ObjectHideFlags: 0

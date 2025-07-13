@@ -7,17 +7,17 @@ using System;
 public class StageSelect : MonoBehaviour
 {
     [SerializeField] private Button[] stageButtons;
+    [SerializeField] private StageLoader stageLoader;
 
     private void Start()
     {
 
         GameData gameData = DataPersistenceManager.Instance.SaveGameData;
-        Boolean noGameData = gameData == null || gameData.LevelStatus.Count == 0;
+        bool noGameData = gameData == null || gameData.LevelStatus.Count == 0;
 
         int lastStagePlayedIndex = 0;
         foreach (var stageButton in stageButtons)
         {
-
             if (noGameData)
             {
                 // No game data, gray out button
@@ -58,7 +58,7 @@ public class StageSelect : MonoBehaviour
 
         void ReplayStage(int stageIndex)
         {
-            SceneManager.LoadScene(stageIndex);
+            stageLoader.LoadStageByIndex(stageIndex);
         }
 
     }

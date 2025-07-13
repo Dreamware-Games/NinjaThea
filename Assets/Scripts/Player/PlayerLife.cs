@@ -9,6 +9,12 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private AudioSource deathSound;
 
     private bool isDead = false;
+    private StageLoader stageLoader;
+
+    private void Start()
+    {
+        stageLoader = FindFirstObjectByType<StageLoader>();
+    }
 
     private void Update()
     {
@@ -36,7 +42,7 @@ public class PlayerLife : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        stageLoader.LoadStageByIndex(SceneManager.GetActiveScene().buildIndex);
     }
 
     public bool IsDead()

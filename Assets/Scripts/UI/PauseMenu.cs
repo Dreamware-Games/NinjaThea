@@ -4,16 +4,23 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
 
-    public static bool isPaused;
+    [HideInInspector] public static bool Paused;
 
     [SerializeField] private GameObject pauseMenu;
+
+    private StageLoader stageLoader;
+
+    private void Start()
+    {
+        stageLoader = FindFirstObjectByType<StageLoader>();
+    }
 
     private void Update()
     {
         if (!GameManager.Instance.gamePlaying) return;
         if (Input.GetButtonDown("Pause"))
         {
-            if (isPaused) Resume();
+            if (Paused) Resume();
             else Pause();
         }
     }
@@ -23,7 +30,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = false;
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        isPaused = false;
+        Paused = false;
     }
 
     private void Pause()
@@ -31,19 +38,17 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
-        isPaused = true;
+        Paused = true;
     }
 
     public void MainMenu()
     {
-        SceneManager.LoadScene("Menu Scene");
-        Resume();
+        stageLoader.LoadStageByIndex(0);
     }
 
     public void Retry()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Resume();
+        stageLoader.LoadStageByIndex(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

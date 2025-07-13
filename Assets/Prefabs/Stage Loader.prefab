@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crossfadeAnimator: {fileID: 5206124456185525971}
-  transitionTime: 2
+  transitionTime: 1
 --- !u!1 &5206124456185525928
 GameObject:
   m_ObjectHideFlags: 0
@@ -162,7 +162,7 @@ Animator:
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: bb33d0c896fdf2f4297edb237149dbe5, type: 2}
   m_CullingMode: 0
-  m_UpdateMode: 0
+  m_UpdateMode: 2
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0

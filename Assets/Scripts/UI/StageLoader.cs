@@ -20,6 +20,11 @@ public class StageLoader : MonoBehaviour
         Instance = this;
     }
 
+    private void Start()
+    {
+        Time.timeScale = 1f;
+        PauseMenu.Paused = false;
+    }
 
     public void LoadNextStage()
     {
@@ -34,9 +39,7 @@ public class StageLoader : MonoBehaviour
     IEnumerator LoadNextStageByIndex(int sceneIndex)
     {
         crossfadeAnimator.SetTrigger("Crossfade");
-
-        yield return new WaitForSeconds(transitionTime);
-
+        yield return new WaitForSecondsRealtime(transitionTime);
         SceneManager.LoadScene(sceneIndex);
     }
 }
