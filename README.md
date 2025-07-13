@@ -14,4 +14,4 @@ Pixel art courtesy of:
 
 Background music and sound effects from PlayOnLoop.com - Licensed under [Creative Commons by Attribution 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-Made with Unity 2021.3.0f1
+Made with [Unity version 6000.0.49](https://unity.com/releases/editor/whats-new/6000.0.49)
