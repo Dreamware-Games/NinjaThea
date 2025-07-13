@@ -11,7 +11,6 @@ public class GameManager : MonoBehaviour
     public bool tasksCompleted;
     public bool gamePlaying;
 
-    // TODO Handle music better in AudioManager
     [SerializeField] private AudioSource backgroundMusic;
     [SerializeField] private GameObject itemsContainer;
     [SerializeField] private TextMeshProUGUI itemText;
@@ -88,9 +87,7 @@ public class GameManager : MonoBehaviour
 
         tasksCompleted = false;
         gamePlaying = false;
-
         Cursor.visible = false;
-
         StartCoroutine(CountdownToBeginGame());
     }
 
@@ -101,7 +98,6 @@ public class GameManager : MonoBehaviour
             elapsedTime = Time.time - startTime;
             timePlaying = TimeSpan.FromSeconds(elapsedTime);
             timeText.text = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
-            // TODO Refactor
             if (tasksNotCompleteWarningText.enabled && (Time.time >= timeWhenDisappear))
             {
                 tasksNotCompleteWarningText.gameObject.SetActive(false);
@@ -111,7 +107,6 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CountdownToBeginGame()
     {
-
         for (int i = 0; i < countdownSteps.Length; i++)
         {
             string step = countdownSteps[i];
@@ -126,10 +121,8 @@ public class GameManager : MonoBehaviour
             audio.Play();
             yield return new WaitForSeconds(1f);
         }
-
         yield return new WaitForSeconds(.5f);
         countdownText.gameObject.SetActive(false);
-
     }
 
     private void BeginGame()
