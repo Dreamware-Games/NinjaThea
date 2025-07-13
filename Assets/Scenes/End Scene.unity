@@ -655,6 +655,7 @@ GameObject:
   - component: {fileID: 509016132}
   - component: {fileID: 509016131}
   - component: {fileID: 509016130}
+  - component: {fileID: 509016133}
   m_Layer: 5
   m_Name: Main Menu Button (End Scene)
   m_TagString: Untagged
@@ -776,6 +777,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 509016128}
   m_CullTransparentMesh: 1
+--- !u!114 &509016133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 509016128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9933e1c7367984cbce437fb4cb7bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &631965989
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +1091,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 509016128}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &847333614
@@ -1960,6 +1973,7 @@ GameObject:
   - component: {fileID: 1282110063}
   - component: {fileID: 1282110062}
   - component: {fileID: 1282110061}
+  - component: {fileID: 1282110064}
   m_Layer: 5
   m_Name: Quit Button (End Scene)
   m_TagString: Untagged
@@ -2081,6 +2095,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1282110059}
   m_CullTransparentMesh: 1
+--- !u!114 &1282110064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282110059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9933e1c7367984cbce437fb4cb7bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1428624503
 GameObject:
   m_ObjectHideFlags: 0
