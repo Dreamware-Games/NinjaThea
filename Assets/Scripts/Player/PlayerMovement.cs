@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         playerLife = gameObject.GetComponent<PlayerLife>();
-        finishLine = FindObjectOfType<FinishLine>();
+        finishLine = FindFirstObjectByType<FinishLine>();
     }
 
     private void Update()
@@ -68,11 +68,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalMove * moveSpeed, rb.velocity.y);
+        if (playerLife.IsDead()) return;
+        rb.linearVelocity = new Vector2(horizontalMove * moveSpeed, rb.linearVelocity.y);
         if (jump)
         {
             jumpSound.Play();
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             jump = false;
             coyoteTimeCounter = 0f;
             jumpBufferCounter = 0f;
@@ -97,11 +98,11 @@ public class PlayerMovement : MonoBehaviour
             state = MovementState.idle;
         }
 
-        if (rb.velocity.y > .1f)
+        if (rb.linearVelocity.y > .1f)
         {
             state = MovementState.jumping;
         }
-        else if (rb.velocity.y < -.1f)
+        else if (rb.linearVelocity.y < -.1f)
         {
             state = MovementState.falling;
         }

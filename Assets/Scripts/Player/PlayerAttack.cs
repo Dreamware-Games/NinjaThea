@@ -41,7 +41,7 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attackSound.Play();
-        Vector2 velocity = rb.velocity;
+        Vector2 velocity = rb.linearVelocity;
         if (velocity.y > .1f || velocity.y < -.1f) animator.SetTrigger("Attack Jump");
         else animator.SetTrigger("Attack");
     }

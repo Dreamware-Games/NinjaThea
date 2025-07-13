@@ -1,11 +1,16 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    private void Awake()
+
+    [SerializeField] private TextMeshProUGUI version;
+
+    private void Start()
     {
         Cursor.visible = true;
+        if (version != null) version.text = Application.version;
     }
 
     public void LoadScene(string sceneName)
@@ -25,7 +30,11 @@ public class MainMenu : MonoBehaviour
 
     public void QuitGame()
     {
-        Application.Quit();
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+    Application.Quit();
+#endif
     }
 
 }
