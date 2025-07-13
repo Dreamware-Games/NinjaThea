@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Collections;
 
-public class PanelDefaultButtonHighlighter : MonoBehaviour
+public class DefaultButtonHighlighter : MonoBehaviour
 {
     [SerializeField] private Button defaultHighlightedButton;
 
