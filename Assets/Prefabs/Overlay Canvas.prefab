@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 147286064}
   - component: {fileID: 147286063}
   - component: {fileID: 147286062}
+  - component: {fileID: 4938661970185806186}
   m_Layer: 5
   m_Name: Retry Button (HUD)
   m_TagString: Untagged
@@ -133,6 +134,18 @@ MonoBehaviour:
           m_StringArgument: Tutorial
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4938661970185806186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 147286060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9933e1c7367984cbce437fb4cb7bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &271979007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,6 +1518,7 @@ GameObject:
   - component: {fileID: 1258476178}
   - component: {fileID: 1258476177}
   - component: {fileID: 1258476176}
+  - component: {fileID: 71583864058982901}
   m_Layer: 5
   m_Name: Continue Button (HUD)
   m_TagString: Untagged
@@ -1626,6 +1640,18 @@ MonoBehaviour:
           m_StringArgument: Level 5
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &71583864058982901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258476174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9933e1c7367984cbce437fb4cb7bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1266733414
 GameObject:
   m_ObjectHideFlags: 0
@@ -2143,6 +2169,7 @@ GameObject:
   - component: {fileID: 1953316736}
   - component: {fileID: 1953316735}
   - component: {fileID: 1953316734}
+  - component: {fileID: 4333279652194715018}
   m_Layer: 5
   m_Name: Main Menu Button (HUD)
   m_TagString: Untagged
@@ -2264,6 +2291,18 @@ MonoBehaviour:
           m_StringArgument: Menu Scene
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &4333279652194715018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1953316732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca9933e1c7367984cbce437fb4cb7bc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2108962883
 GameObject:
   m_ObjectHideFlags: 0
