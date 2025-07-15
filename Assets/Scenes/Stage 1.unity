@@ -9439,6 +9439,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3326274982575387136, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 242a78bd938326846802919a6a24d942, type: 3}
+    - target: {fileID: 3326274982575387137, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8d676383f24069e4c8780992150d834c, type: 3}
     - target: {fileID: 3326274982575387156, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
       propertyPath: m_Name
       value: Player
@@ -9491,6 +9499,10 @@ PrefabInstance:
       propertyPath: m_AngularDrag
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3326274982872239317, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 259b4dcd8a20f174983be27c5e3bae4d, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
