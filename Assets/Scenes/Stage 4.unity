@@ -626,11 +626,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3709558693543296180, guid: 13e7418d60af5724c94f386c0066a43e, type: 3}
   m_PrefabInstance: {fileID: 87174585}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &157985921 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7457493591439846155, guid: eb6c91587567fd74cbe00671586028f1, type: 3}
-  m_PrefabInstance: {fileID: 368827554}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &173500422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1124,62 +1119,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7457493591439846155, guid: eb6c91587567fd74cbe00671586028f1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 368827559}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb6c91587567fd74cbe00671586028f1, type: 3}
 --- !u!4 &368827555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7457493591439846154, guid: eb6c91587567fd74cbe00671586028f1, type: 3}
   m_PrefabInstance: {fileID: 368827554}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &368827559
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157985921}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
-    newSize: {x: 1, y: 2}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 2}
-  m_EdgeRadius: 0
 --- !u!1001 &447466928
 PrefabInstance:
   m_ObjectHideFlags: 0
