@@ -8,6 +8,7 @@ public class FinishLine : MonoBehaviour
     [SerializeField] private bool isFinalStage;
 
     private bool isFinished = false;
+    private bool unifinishedChecked = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -30,11 +31,14 @@ public class FinishLine : MonoBehaviour
         else
         {
             GameManager.Instance.DisplayTasksNotCompleteWarningText();
-            UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
+            if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null && !unifinishedChecked)
+            {
+                unifinishedChecked = true; // Do it only once
+                UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
+            }
         }
 
     }
-
     public bool IsFinalStage()
     {
         return isFinalStage;

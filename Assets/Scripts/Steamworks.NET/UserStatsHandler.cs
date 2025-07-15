@@ -21,7 +21,7 @@ public class UserStatsHandler : MonoBehaviour
     {
         if (!updateStats)
         {
-            Debug.LogWarning("Achievement not popped because 'updateStats' is false");
+            Debug.LogWarning($"Achievement {achievementID} not popped because 'updateStats' is false");
             return;
         }
 
