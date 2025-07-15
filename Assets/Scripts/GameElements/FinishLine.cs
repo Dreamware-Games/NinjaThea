@@ -30,6 +30,7 @@ public class FinishLine : MonoBehaviour
         else
         {
             GameManager.Instance.DisplayTasksNotCompleteWarningText();
+            UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
         }
 
     }
