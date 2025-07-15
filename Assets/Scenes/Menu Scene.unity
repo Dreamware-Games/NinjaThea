@@ -4445,7 +4445,7 @@ MonoBehaviour:
     store.
 
 
-    It''s up to you, brave little <i><#000000>NinjaThea</color></i>,
+    It''s up to you, brave little <b><#000000>NinjaThea</color></b>,
     to punish the critters and gather all the fruit as fast as you can.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b13d6e8af1fef174ca143e272f09c024, type: 2}

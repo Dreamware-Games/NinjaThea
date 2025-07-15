@@ -9900,6 +9900,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1728366430, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728366432, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1728366432, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
+      propertyPath: 'm_ActiveFontFeatures.Array.data[0]'
+      value: 1801810542
+      objectReference: {fileID: 0}
     - target: {fileID: 8256643196293748516, guid: c0db4d34595ed54468416f66ca73a028, type: 3}
       propertyPath: m_Name
       value: Overlay Canvas
