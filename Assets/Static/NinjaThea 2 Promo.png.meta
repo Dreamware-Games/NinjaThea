@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0d8cf4c13115e404d82d46fdfc3e3af1
+guid: 0f593e5d9c7e27a4da900bd1f921a5d9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8307045245342455880
-    second: Small Capsule_0
+      213: -143879020357336309
+    second: NinjaThea 2 Promo_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Small Capsule_0
+      name: NinjaThea 2 Promo_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 462
-        height: 174
+        width: 800
+        height: 300
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8b7e34aac5277bc80800000000000000
-      internalID: -8307045245342455880
+      spriteID: b0348f41bc6d00ef0800000000000000
+      internalID: -143879020357336309
       vertices: []
       indices: 
       edges: []
@@ -134,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Small Capsule_0: -8307045245342455880
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

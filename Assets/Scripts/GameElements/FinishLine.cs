@@ -33,7 +33,7 @@ public class FinishLine : MonoBehaviour
             GameManager.Instance.DisplayTasksNotCompleteWarningText();
             if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null && !unifinishedChecked)
             {
-                unifinishedChecked = true; // Do it only once
+                unifinishedChecked = true; // Do it only once per scene load
                 UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
             }
         }

@@ -27,7 +27,7 @@ public class UserStatsHandler : MonoBehaviour
 
         if (achievementID != null && SteamManager.Initialized)
         {
-            Steamworks.SteamUserStats.GetAchievement(achievementID, out bool achievementUnlocked);
+            SteamUserStats.GetAchievement(achievementID, out bool achievementUnlocked);
             if (!achievementUnlocked)
             {
                 SteamUserStats.SetAchievement(achievementID);
