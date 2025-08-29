@@ -19,7 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 551404507136
-    m_Localized: Beenden
+    m_Localized: SPIEL STARTEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750092125265920
+    m_Localized: "LEVEL AUSW\xC4HLEN"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750226548514816
+    m_Localized: BEENDEN
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750331859099648
+    m_Localized: CREDITS
     m_Metadata:
       m_Items: []
   references:

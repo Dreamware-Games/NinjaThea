@@ -19,7 +19,19 @@ MonoBehaviour:
     m_Items: []
   m_TableData:
   - m_Id: 551404507136
-    m_Localized: Quitter
+    m_Localized: JOUER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750092125265920
+    m_Localized: "S\xC9LECTION DE NIVEAU"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750226548514816
+    m_Localized: QUITTER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750331859099648
+    m_Localized: "CR\xC9DITS"
     m_Metadata:
       m_Items: []
   references:

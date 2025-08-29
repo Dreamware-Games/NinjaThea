@@ -16,7 +16,19 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: c0d4b8edc5591fe408f5becefeb2b138
   m_Entries:
   - m_Id: 551404507136
-    m_Key: quit
+    m_Key: ui_play_game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750092125265920
+    m_Key: ui_stage_select
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750226548514816
+    m_Key: ui_quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14750331859099648
+    m_Key: ui_credits
     m_Metadata:
       m_Items: []
   m_Metadata:
