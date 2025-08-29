@@ -13,6 +13,12 @@ public class PauseMenu : MonoBehaviour
     private void Start()
     {
         stageLoader = FindFirstObjectByType<StageLoader>();
+        SteamOverlayMonitor.OnOverlayActiveChanged += HandleOverlayActiveChanged;
+    }
+
+    private void OnDisable()
+    {
+        SteamOverlayMonitor.OnOverlayActiveChanged -= HandleOverlayActiveChanged;
     }
 
     private void Update()
@@ -22,6 +28,14 @@ public class PauseMenu : MonoBehaviour
         {
             if (Paused) Resume();
             else Pause();
+        }
+    }
+
+    private void HandleOverlayActiveChanged(bool steamOverlayActive)
+    {
+        if (!Paused && steamOverlayActive)
+        {
+            Pause();
         }
     }
 

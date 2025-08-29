@@ -7914,11 +7914,11 @@ PrefabInstance:
     - target: {fileID: 6266125489989344207, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 47179775c03838a4fb138711a8d99404, type: 3}
+      objectReference: {fileID: 8300000, guid: 1a1fd0d3b29571941998b3a607a4338b, type: 3}
     - target: {fileID: 6266125489989344207, guid: 084a08014a2008e4fa2e3ce3484faf3b, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 47179775c03838a4fb138711a8d99404, type: 3}
+      objectReference: {fileID: 8300000, guid: 1a1fd0d3b29571941998b3a607a4338b, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
