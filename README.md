@@ -1,6 +1,6 @@
 # NinjaThea
 
-<img src="Assets/Static/Images/NinjaThea Sit.png" width="200" height="200" />
+<img src="Assets/Static/NinjaThea Sit.png" width="200" height="200" />
 A simple Unity 2D platformer for my 4 year old daughter. Mischievous critters have stolen all the fruit from the local grocery store and it's up to brave little NinjaThea to get it all back as fast as she can!
 
 Check it out on [Steam!](https://store.steampowered.com/app/2005800/NinjaThea/)
