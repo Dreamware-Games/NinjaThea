@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -6,13 +7,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private BoxCollider2D coll;
     [SerializeField] private Animator animator;
     [SerializeField] private AudioSource jumpSound;
-
-    private float horizontalMove = 0f;
-    private bool jump = false;
-    private float coyoteTime = .1f;
-    private float coyoteTimeCounter;
-    private float jumpBufferTime = .1f;
-    private float jumpBufferCounter;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private bool facingRight = true;
     [SerializeField] private float jumpForce = 14f;
@@ -21,10 +15,29 @@ public class PlayerMovement : MonoBehaviour
     private PlayerLife playerLife;
     private FinishLine finishLine;
 
+    private float horizontalMove = 0f;
+    private bool jump = false;
+    private float coyoteTime = .1f;
+    private float coyoteTimeCounter;
+    private float jumpBufferTime = .1f;
+    private float jumpBufferCounter;
+
     private void Start()
     {
-        playerLife = gameObject.GetComponent<PlayerLife>();
+        playerLife = GetComponent<PlayerLife>();
         finishLine = FindFirstObjectByType<FinishLine>();
+    }
+
+    public void OnMove(InputAction.CallbackContext context)
+    {
+        Vector2 input = context.ReadValue<Vector2>();
+        horizontalMove = input.x;
+    }
+
+    public void OnJump(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        jumpBufferCounter = jumpBufferTime;
     }
 
     private void Update()
@@ -39,37 +52,28 @@ public class PlayerMovement : MonoBehaviour
             return;
         }
 
-        if (GameManager.Instance.GamePlaying && !PauseMenu.Paused)
-        {
-            horizontalMove = Input.GetAxisRaw("Horizontal");
-            if (isGrounded())
-            {
-                coyoteTimeCounter = coyoteTime;
-            }
-            else
-            {
-                coyoteTimeCounter -= Time.deltaTime;
-            }
-            if (Input.GetButtonDown("Jump"))
-            {
-                jumpBufferCounter = jumpBufferTime;
-            }
-            else
-            {
-                jumpBufferCounter -= Time.deltaTime;
-            }
-            if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
-            {
-                jump = true;
-            }
-            UpdateAnimationState();
-        }
+        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused)
+            return;
+
+        if (isGrounded())
+            coyoteTimeCounter = coyoteTime;
+        else
+            coyoteTimeCounter -= Time.deltaTime;
+
+        jumpBufferCounter -= Time.deltaTime;
+
+        if (jumpBufferCounter > 0f && coyoteTimeCounter > 0f)
+            jump = true;
+
+        UpdateAnimationState();
     }
 
     private void FixedUpdate()
     {
         if (playerLife.IsDead()) return;
+
         rb.linearVelocity = new Vector2(horizontalMove * moveSpeed, rb.linearVelocity.y);
+
         if (jump)
         {
             jumpSound.Play();
@@ -87,10 +91,12 @@ public class PlayerMovement : MonoBehaviour
         if (horizontalMove != 0f)
         {
             state = MovementState.running;
-            if ((horizontalMove < 0f && facingRight) || (horizontalMove > 0f && !facingRight))
+
+            if ((horizontalMove < 0f && facingRight) ||
+                (horizontalMove > 0f && !facingRight))
             {
                 facingRight = !facingRight;
-                transform.Rotate(new Vector3(0, 180, 0));
+                transform.Rotate(0, 180, 0);
             }
         }
         else
@@ -99,20 +105,23 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (rb.linearVelocity.y > .1f)
-        {
             state = MovementState.jumping;
-        }
         else if (rb.linearVelocity.y < -.1f)
-        {
             state = MovementState.falling;
-        }
 
         animator.SetInteger("State", (int)state);
     }
 
     private bool isGrounded()
     {
-        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, terrain);
+        return Physics2D.BoxCast(
+            coll.bounds.center,
+            coll.bounds.size,
+            0f,
+            Vector2.down,
+            .1f,
+            terrain
+        );
     }
 
 }

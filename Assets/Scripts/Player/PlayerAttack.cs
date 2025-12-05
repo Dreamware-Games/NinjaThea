@@ -1,8 +1,8 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerAttack : MonoBehaviour
 {
-
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Animator animator;
     [SerializeField] private Transform attackPoint;
@@ -11,49 +11,51 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private LayerMask enemyLayer;
 
-    private bool attack = false;
     private float nextAttackTime = 0f;
+    private PlayerLife playerLife;
 
-    private void Update()
+    private void Start()
     {
-        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused) return;
-        if (!gameObject.GetComponent<PlayerLife>().IsDead())
-        {
-            if (Time.time >= nextAttackTime)
-            {
-                if (Input.GetButtonDown("Attack") || Input.GetKeyDown(KeyCode.Z))
-                {
-                    attack = true;
-                    nextAttackTime = Time.time + 1f / attackRate;
-                }
-            }
-        }
+        playerLife = GetComponent<PlayerLife>();
     }
 
-    private void FixedUpdate()
+    public void OnAttack(InputAction.CallbackContext context)
     {
-        if (attack)
-        {
-            Attack();
-            attack = !attack;
-        }
+        if (!context.performed) return;
+        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused || playerLife.IsDead()) return;
+        // Cooldown
+        if (Time.time < nextAttackTime)
+            return;
+        nextAttackTime = Time.time + 1f / attackRate;
+        Attack();
     }
 
     private void Attack()
     {
         attackSound.Play();
+
         Vector2 velocity = rb.linearVelocity;
-        if (velocity.y > .1f || velocity.y < -.1f) animator.SetTrigger("Attack Jump");
-        else animator.SetTrigger("Attack");
+
+        if (velocity.y > .1f || velocity.y < -.1f)
+            animator.SetTrigger("Attack Jump");
+        else
+            animator.SetTrigger("Attack");
     }
 
+    // Animation event calls this
     public void CheckEnemyHit()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayer);
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(
+            attackPoint.position,
+            attackRange,
+            enemyLayer
+        );
+
         foreach (Collider2D enemyColl in hitEnemies)
         {
             Enemy enemy = enemyColl.GetComponent<Enemy>();
-            if (!enemy.IsDead()) enemy.Die();
+            if (!enemy.IsDead())
+                enemy.Die();
         }
     }
 
