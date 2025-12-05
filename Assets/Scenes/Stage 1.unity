@@ -2908,6 +2908,28 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3326274982575387156, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
   m_PrefabInstance: {fileID: 3326274982872239315}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1508268693 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2015642711, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
+  m_PrefabInstance: {fileID: 3326274982872239315}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508268692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79e2373ab4cc10944bd05103733f5a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1508268696 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3326274982575387167, guid: dc4cc4f1aa85847458c845c61337d4e7, type: 3}
+  m_PrefabInstance: {fileID: 3326274982872239315}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1508268692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6953e5f3fcace74c80c2ff595490f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1508268705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2932,10 +2954,62 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 17f9537e-46e5-442b-8456-4a653d191bf9
+    m_ActionName: 'UI/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1508268696}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnJump
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: ced20bc6-cefa-4bfd-a3ea-33b24c33cf7d
+    m_ActionName: 'Player/Jump[/Keyboard/space]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1508268693}
+        m_TargetAssemblyTypeName: PlayerAttack, Assembly-CSharp
+        m_MethodName: OnAttack
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 0a866663-9887-4cd8-94ec-be84753f9772
+    m_ActionName: 'Player/Attack[/Keyboard/z,/Keyboard/rightShift,/Keyboard/leftShift,/Mouse/leftButton]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1508268696}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: OnMove
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 30f543c5-745c-478a-b3c0-03282722de6f
+    m_ActionName: 'Player/Move[/Keyboard/leftArrow,/Keyboard/rightArrow,/Keyboard/a,/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
-  m_DefaultActionMap: 2d38f5ca-36ef-4210-8dc1-49aa8a4ff533
+  m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!1 &1516768368 stripped
