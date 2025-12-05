@@ -36,3 +36,4 @@ EditorBuildSettings:
     path: Assets/Scenes/End Scene.unity
     guid: 9f0c7c22196f6004ba0d92f326b81bf1
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

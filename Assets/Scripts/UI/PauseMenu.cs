@@ -3,7 +3,6 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-
     [HideInInspector] public static bool Paused;
 
     [SerializeField] private GameObject pauseMenu;
@@ -21,14 +20,14 @@ public class PauseMenu : MonoBehaviour
         SteamOverlayMonitor.OnOverlayActiveChanged -= HandleOverlayActiveChanged;
     }
 
-    private void Update()
+    public void OnPause()
     {
         if (!GameManager.Instance.GamePlaying) return;
-        if (Input.GetButtonDown("Pause"))
-        {
-            if (Paused) Resume();
-            else Pause();
-        }
+
+        if (Paused)
+            Resume();
+        else
+            Pause();
     }
 
     private void HandleOverlayActiveChanged(bool steamOverlayActive)
