@@ -14,16 +14,20 @@ public class Parallax : MonoBehaviour
         length = GetComponent<SpriteRenderer>().bounds.size.x;
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         Vector3 camPosition = cam.transform.position;
         float temp = camPosition.x * (1 - parallaxEffect);
         float dist = camPosition.x * parallaxEffect;
+
         float yPosition = defaultYPos;
-        if (camPosition.y <= defaultYPos) yPosition += (camPosition.y - defaultYPos);
+        if (camPosition.y <= defaultYPos)
+            yPosition += camPosition.y - defaultYPos;
+
         transform.position = new Vector3(startPos + dist, yPosition, transform.position.z);
 
         if (temp > startPos + length) startPos += length;
         else if (temp < startPos - length) startPos -= length;
     }
+
 }
