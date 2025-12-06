@@ -30,6 +30,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
+        if (!context.performed) return;
         Vector2 input = context.ReadValue<Vector2>();
         horizontalMove = input.x;
     }
