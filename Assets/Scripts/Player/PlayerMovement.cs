@@ -30,14 +30,21 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (!context.performed) return;
-        Vector2 input = context.ReadValue<Vector2>();
-        horizontalMove = input.x;
+        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused)
+            return;
+        if (context.started)
+        {
+            Vector2 input = context.ReadValue<Vector2>();
+            horizontalMove = input.x;
+        }
+        if (context.canceled)
+            horizontalMove = 0f;
     }
 
     public void OnJump(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
+        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused || playerLife.IsDead()) return;
         jumpBufferCounter = jumpBufferTime;
     }
 
