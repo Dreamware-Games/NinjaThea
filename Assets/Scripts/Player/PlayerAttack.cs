@@ -22,7 +22,8 @@ public class PlayerAttack : MonoBehaviour
     public void OnAttack(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused || playerLife.IsDead()) return;
+        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused || playerLife.IsDead())
+            return;
         // Cooldown
         if (Time.time < nextAttackTime)
             return;
@@ -33,9 +34,7 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attackSound.Play();
-
         Vector2 velocity = rb.linearVelocity;
-
         if (velocity.y > .1f || velocity.y < -.1f)
             animator.SetTrigger("Attack Jump");
         else
