@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private FinishLine finishLine;
 
     private float horizontalMove = 0f;
+    private float bufferedMove = 0f;
     private bool jump = false;
     private float coyoteTime = .1f;
     private float coyoteTimeCounter;
@@ -26,19 +27,30 @@ public class PlayerMovement : MonoBehaviour
     {
         playerLife = GetComponent<PlayerLife>();
         finishLine = FindFirstObjectByType<FinishLine>();
+        GameManager.OnGameStarted += OnGameplayStart;
+    }
+
+    public void OnGameplayStart()
+    {
+        horizontalMove = bufferedMove;
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (!GameManager.Instance.GamePlaying || PauseMenu.Paused || playerLife.IsDead())
-            return;
-        if (context.performed)
+        if (context.performed || context.started)
         {
             Vector2 input = context.ReadValue<Vector2>();
-            horizontalMove = input.x;
+            bufferedMove = input.x;
+            if (GameManager.Instance.GamePlaying && !PauseMenu.Paused)
+            {
+                horizontalMove = bufferedMove;
+            }
         }
         if (context.canceled)
+        {
+            bufferedMove = 0f;
             horizontalMove = 0f;
+        }
     }
 
     public void OnJump(InputAction.CallbackContext context)
@@ -131,6 +143,11 @@ public class PlayerMovement : MonoBehaviour
             .1f,
             terrain
         );
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnGameStarted -= OnGameplayStart;
     }
 
 }

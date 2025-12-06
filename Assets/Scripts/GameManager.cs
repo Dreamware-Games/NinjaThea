@@ -6,8 +6,10 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+    public static event Action OnGameStarted;
 
     public static GameManager Instance;
+
     [HideInInspector] public bool TasksCompleted;
     [HideInInspector] public bool GamePlaying;
 
@@ -128,6 +130,7 @@ public class GameManager : MonoBehaviour
     private void BeginGame()
     {
         GamePlaying = true;
+        OnGameStarted?.Invoke();
         startTime = Time.time;
         backgroundMusic.gameObject.SetActive(true);
     }
