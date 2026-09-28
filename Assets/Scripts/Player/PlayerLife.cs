@@ -1,3 +1,4 @@
+using NinjaThea.GameElements;
 using NinjaThea.UI;
 using UnityEngine;
 
@@ -12,6 +13,12 @@ namespace NinjaThea.Player
         private static readonly int DeathHash = Animator.StringToHash("Death");
 
         private bool isDead = false;
+        private FinishLine finishLine;
+
+        private void Start()
+        {
+            finishLine = FindAnyObjectByType<FinishLine>();
+        }
 
         private void Update()
         {
@@ -30,6 +37,8 @@ namespace NinjaThea.Player
 
         private void Die()
         {
+            // Die once; never after the stage is finished (would reload it over the stage-end countdown)
+            if (isDead || (finishLine != null && finishLine.IsFinished())) return;
             isDead = true;
             ResetAllAnimatorTriggers();
             deathSound.Play();

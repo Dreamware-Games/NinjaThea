@@ -30,11 +30,15 @@ namespace NinjaThea.Player
         private float jumpBufferTime = .1f;
         private float jumpBufferCounter;
 
+        private void OnEnable()
+        {
+            GameManager.OnGameStarted += OnGameplayStart;
+        }
+
         private void Start()
         {
             playerLife = GetComponent<PlayerLife>();
             finishLine = FindAnyObjectByType<FinishLine>();
-            GameManager.OnGameStarted += OnGameplayStart;
         }
 
         public void OnGameplayStart()

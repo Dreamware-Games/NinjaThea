@@ -1075,7 +1075,7 @@ MonoBehaviour:
       - m_Target: {fileID: 7968934367263289824}
         m_TargetAssemblyTypeName: NinjaThea.UI.PauseMenu, Assembly-CSharp
         m_MethodName: OnPause
-        m_Mode: 1
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

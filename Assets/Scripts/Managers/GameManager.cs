@@ -98,7 +98,7 @@ namespace NinjaThea.Managers
             {
                 elapsedTime = Time.time - startTime;
                 UpdateTimeText();
-                if (tasksNotCompleteWarningText.enabled && (Time.time >= timeWhenDisappear))
+                if (tasksNotCompleteWarningText.gameObject.activeSelf && (Time.time >= timeWhenDisappear))
                 {
                     tasksNotCompleteWarningText.gameObject.SetActive(false);
                 }
@@ -110,8 +110,16 @@ namespace NinjaThea.Managers
             int hundredths = (int)(elapsedTime * 100f);
             if (hundredths == shownHundredths) return;
             shownHundredths = hundredths;
-            TimeFormat.Write(elapsedTime, timeChars, 6);
-            timeText.SetCharArray(timeChars);
+            if (hundredths < TimeFormat.OneHourHundredths)
+            {
+                TimeFormat.Write(elapsedTime, timeChars, 6);
+                timeText.SetCharArray(timeChars);
+            }
+            else
+            {
+                // Past an hour the fixed mm:ss.ff buffer can't hold the minutes
+                timeText.text = "Time: " + TimeFormat.Format(elapsedTime);
+            }
         }
 
         private IEnumerator CountdownToBeginGame()

@@ -1,6 +1,7 @@
 using NinjaThea.Managers;
 using NinjaThea.Steamworks.NET;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace NinjaThea.UI
 {
@@ -10,7 +11,7 @@ namespace NinjaThea.UI
 
         [SerializeField] private GameObject pauseMenu;
 
-        private void Start()
+        private void OnEnable()
         {
             SteamOverlayMonitor.OnOverlayActiveChanged += HandleOverlayActiveChanged;
         }
@@ -20,8 +21,10 @@ namespace NinjaThea.UI
             SteamOverlayMonitor.OnOverlayActiveChanged -= HandleOverlayActiveChanged;
         }
 
-        public void OnPause()
+        public void OnPause(InputAction.CallbackContext context)
         {
+            // Toggle once per press (started/canceled would toggle again)
+            if (!context.performed) return;
             if (!GameManager.Instance.GamePlaying) return;
 
             if (Paused)
@@ -32,7 +35,8 @@ namespace NinjaThea.UI
 
         private void HandleOverlayActiveChanged(bool steamOverlayActive)
         {
-            if (!Paused && steamOverlayActive)
+            // Only mid-run: pausing during the countdown or stage-end would freeze their coroutines
+            if (!Paused && steamOverlayActive && GameManager.Instance.GamePlaying)
             {
                 Pause();
             }

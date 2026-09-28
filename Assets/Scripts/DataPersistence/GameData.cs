@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using NinjaThea.Util;
 
 namespace NinjaThea.DataPersistence
 {
@@ -21,7 +22,7 @@ namespace NinjaThea.DataPersistence
             {
                 LevelData alreadyPassedLevelData = LevelStatus[index];
                 // Replace if the new completion time is better (less)
-                if (string.Compare(levelData.CompletionTime, alreadyPassedLevelData.CompletionTime) < 0)
+                if (TimeFormat.Compare(levelData.CompletionTime, alreadyPassedLevelData.CompletionTime) < 0)
                 {
                     LevelStatus[index] = levelData;
                 }

@@ -8,6 +8,8 @@ namespace NinjaThea.GameElements
     {
         [SerializeField] private TextMeshProUGUI tutorialText;
 
+        private bool shown;
+
         private void Awake()
         {
             tutorialText.gameObject.SetActive(false);
@@ -15,10 +17,9 @@ namespace NinjaThea.GameElements
 
         private void OnTriggerEnter2D(Collider2D coll)
         {
-            if (coll.gameObject.CompareTag("Player"))
-            {
-                tutorialText.gameObject.SetActive(true);
-            }
+            if (shown || !coll.gameObject.CompareTag("Player")) return;
+            shown = true;
+            tutorialText.gameObject.SetActive(true);
             StartCoroutine(CountDownAndDestroy());
         }
 

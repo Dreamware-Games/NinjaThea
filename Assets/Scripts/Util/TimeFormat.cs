@@ -4,10 +4,20 @@ namespace NinjaThea.Util
 {
     public static class TimeFormat
     {
-        // mm:ss.ff
+        public const int OneHourHundredths = 360000;
+
+        // mm:ss.ff; past an hour the minutes keep counting (e.g. 75:02.10)
         public static string Format(float seconds)
         {
-            return TimeSpan.FromSeconds(seconds).ToString("mm':'ss'.'ff");
+            TimeSpan time = TimeSpan.FromSeconds(seconds);
+            return $"{(int)time.TotalMinutes:00}:{time.Seconds:00}.{time.Milliseconds / 10:00}";
+        }
+
+        // Orders Format() strings: more minute digits means a longer time
+        public static int Compare(string a, string b)
+        {
+            if (a.Length != b.Length) return a.Length.CompareTo(b.Length);
+            return string.CompareOrdinal(a, b);
         }
 
         // Allocation free version of Format, writes exactly 8 chars (mm:ss.ff) at offset

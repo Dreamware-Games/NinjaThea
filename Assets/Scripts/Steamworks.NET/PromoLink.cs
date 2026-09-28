@@ -9,10 +9,10 @@ namespace NinjaThea.Steamworks.NET
 
         public void OpenStorePage()
         {
-            if (SteamManager.Initialized)
+            if (SteamManager.Initialized && uint.TryParse(storeAppID, out uint appID))
             {
                 SteamFriends.ActivateGameOverlayToStore(
-                    new AppId_t(uint.Parse(storeAppID)),
+                    new AppId_t(appID),
                     EOverlayToStoreFlag.k_EOverlayToStoreFlag_None
                 );
             }

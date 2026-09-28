@@ -61,8 +61,7 @@ namespace NinjaThea.Player
 
             foreach (Collider2D enemyColl in hitEnemies)
             {
-                Enemy enemy = enemyColl.GetComponent<Enemy>();
-                if (!enemy.IsDead())
+                if (enemyColl.TryGetComponent(out Enemy enemy) && !enemy.IsDead())
                     enemy.Die();
             }
         }

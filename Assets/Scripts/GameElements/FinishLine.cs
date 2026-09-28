@@ -15,14 +15,16 @@ namespace NinjaThea.GameElements
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (collision.gameObject.CompareTag("Player") && GameManager.Instance.TasksCompleted)
+            if (!collision.gameObject.CompareTag("Player")) return;
+
+            if (GameManager.Instance.TasksCompleted)
             {
                 if (!isFinished)
                 {
                     isFinished = true;
                     finishLineCrossedSound.Play();
 
-                    if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null)
+                    if (UserStatsHandler.Instance != null && !string.IsNullOrEmpty(levelCompleteAchievementID))
                         UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
 
                     if (!isFinalStage) GameManager.Instance.StageComplete();
@@ -32,7 +34,7 @@ namespace NinjaThea.GameElements
             else
             {
                 GameManager.Instance.DisplayTasksNotCompleteWarningText();
-                if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null && !unfinishedChecked)
+                if (UserStatsHandler.Instance != null && !unfinishedChecked)
                 {
                     unfinishedChecked = true; // Do it only once per scene load
                     UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
