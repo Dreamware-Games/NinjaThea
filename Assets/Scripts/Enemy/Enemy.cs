@@ -13,6 +13,9 @@ public class Enemy : MonoBehaviour
     // Default behaviour is facing right - flip this in editor to face left.
     [SerializeField] private bool facingLeft;
 
+    private static readonly int IdleHash = Animator.StringToHash("Idle");
+    private static readonly int DeathHash = Animator.StringToHash("Death");
+
     private bool dead = false;
 
     private void Start()
@@ -20,7 +23,7 @@ public class Enemy : MonoBehaviour
         // Default behaviour is to start moving. Toggle idle in editor to keep anemy stationary.
         if (idle)
         {
-            animator.SetTrigger("Idle");
+            animator.SetTrigger(IdleHash);
         }
         if (facingLeft)
         {
@@ -34,7 +37,7 @@ public class Enemy : MonoBehaviour
         GameManager.Instance.EnemyKilled();
         dead = true;
         coll.enabled = false;
-        animator.SetTrigger("Death");
+        animator.SetTrigger(DeathHash);
     }
 
     public bool IsDead()

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,12 +12,19 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private AudioSource attackSound;
     [SerializeField] private LayerMask enemyLayer;
 
+    private static readonly int AttackHash = Animator.StringToHash("Attack");
+    private static readonly int AttackJumpHash = Animator.StringToHash("Attack Jump");
+
     private float nextAttackTime = 0f;
     private PlayerLife playerLife;
+    private ContactFilter2D enemyFilter;
+    private readonly List<Collider2D> hitEnemies = new List<Collider2D>();
 
     private void Start()
     {
         playerLife = GetComponent<PlayerLife>();
+        enemyFilter = new ContactFilter2D { useTriggers = Physics2D.queriesHitTriggers };
+        enemyFilter.SetLayerMask(enemyLayer);
     }
 
     public void OnAttack(InputAction.CallbackContext context)
@@ -36,19 +44,15 @@ public class PlayerAttack : MonoBehaviour
         attackSound.Play();
         Vector2 velocity = rb.linearVelocity;
         if (velocity.y > .1f || velocity.y < -.1f)
-            animator.SetTrigger("Attack Jump");
+            animator.SetTrigger(AttackJumpHash);
         else
-            animator.SetTrigger("Attack");
+            animator.SetTrigger(AttackHash);
     }
 
     // Animation event calls this
     public void CheckEnemyHit()
     {
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(
-            attackPoint.position,
-            attackRange,
-            enemyLayer
-        );
+        Physics2D.OverlapCircle(attackPoint.position, attackRange, enemyFilter, hitEnemies);
 
         foreach (Collider2D enemyColl in hitEnemies)
         {

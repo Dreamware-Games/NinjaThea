@@ -7,6 +7,8 @@ public class DefaultButtonHighlighter : MonoBehaviour
 {
     [SerializeField] private Button defaultHighlightedButton;
 
+    private readonly WaitForSecondsRealtime waitReselect = new WaitForSecondsRealtime(3f);
+
     private Coroutine checkCoroutine;
 
     private void OnEnable()
@@ -34,7 +36,7 @@ public class DefaultButtonHighlighter : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSecondsRealtime(3f);
+            yield return waitReselect;
 
             if (EventSystem.current.currentSelectedGameObject == null)
             {

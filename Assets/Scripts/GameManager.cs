@@ -47,6 +47,11 @@ public class GameManager : MonoBehaviour
     private float startTime;
     private float elapsedTime;
     private TimeSpan timePlaying;
+    // "Time: mm:ss.ff", rewritten in place when the shown hundredths change
+    private readonly char[] timeChars = "Time: 00:00.00".ToCharArray();
+    private int shownHundredths = -1;
+    private static readonly WaitForSeconds waitOneSecond = new WaitForSeconds(1f);
+    private static readonly WaitForSeconds waitHalfSecond = new WaitForSeconds(.5f);
     private string currentSceneName;
     private int currentSceneIndex;
     private int secondsToWaitBeforeLoadNextStage = 10;
@@ -98,13 +103,30 @@ public class GameManager : MonoBehaviour
         if (GamePlaying)
         {
             elapsedTime = Time.time - startTime;
-            timePlaying = TimeSpan.FromSeconds(elapsedTime);
-            timeText.text = "Time: " + timePlaying.ToString("mm':'ss'.'ff");
+            UpdateTimeText();
             if (tasksNotCompleteWarningText.enabled && (Time.time >= timeWhenDisappear))
             {
                 tasksNotCompleteWarningText.gameObject.SetActive(false);
             }
         }
+    }
+
+    private void UpdateTimeText()
+    {
+        int hundredths = (int)(elapsedTime * 100f);
+        if (hundredths == shownHundredths) return;
+        shownHundredths = hundredths;
+
+        int minutes = hundredths / 6000 % 60;
+        int seconds = hundredths / 100 % 60;
+        int fraction = hundredths % 100;
+        timeChars[6] = (char)('0' + minutes / 10);
+        timeChars[7] = (char)('0' + minutes % 10);
+        timeChars[9] = (char)('0' + seconds / 10);
+        timeChars[10] = (char)('0' + seconds % 10);
+        timeChars[12] = (char)('0' + fraction / 10);
+        timeChars[13] = (char)('0' + fraction % 10);
+        timeText.SetCharArray(timeChars);
     }
 
     IEnumerator CountdownToBeginGame()
@@ -121,9 +143,9 @@ public class GameManager : MonoBehaviour
             }
             countdownText.text = step;
             audio.Play();
-            yield return new WaitForSeconds(1f);
+            yield return waitOneSecond;
         }
-        yield return new WaitForSeconds(.5f);
+        yield return waitHalfSecond;
         countdownText.gameObject.SetActive(false);
     }
 
@@ -197,6 +219,7 @@ public class GameManager : MonoBehaviour
     private void PrepareStageCompletion(TextMeshProUGUI completedTimeText)
     {
         GamePlaying = false;
+        timePlaying = TimeSpan.FromSeconds(elapsedTime);
         string completionTime = timePlaying.ToString("mm':'ss'.'ff");
         Cursor.visible = true;
         backgroundMusic.gameObject.SetActive(false);
@@ -210,7 +233,7 @@ public class GameManager : MonoBehaviour
         for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
         {
             loadingNextStageText.text = "Loading next stage in " + i + "...";
-            yield return new WaitForSeconds(1f);
+            yield return waitOneSecond;
         }
         StageLoader.Instance.LoadNextStage();
     }
@@ -220,7 +243,7 @@ public class GameManager : MonoBehaviour
         for (int i = secondsToWaitBeforeLoadNextStage; i >= 0; i--)
         {
             endingGameText.text = "Ending game in " + i + "...";
-            yield return new WaitForSeconds(1f);
+            yield return waitOneSecond;
         }
         StageLoader.Instance.LoadNextStage();
     }

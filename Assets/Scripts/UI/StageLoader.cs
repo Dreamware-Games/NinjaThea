@@ -7,6 +7,8 @@ public class StageLoader : MonoBehaviour
 
     public static StageLoader Instance;
 
+    private static readonly int CrossfadeHash = Animator.StringToHash("Crossfade");
+
     [SerializeField] private Animator crossfadeAnimator;
     [SerializeField] private float transitionTime = 2f;
 
@@ -38,7 +40,7 @@ public class StageLoader : MonoBehaviour
 
     IEnumerator LoadByIndex(int sceneIndex)
     {
-        crossfadeAnimator.SetTrigger("Crossfade");
+        crossfadeAnimator.SetTrigger(CrossfadeHash);
         yield return new WaitForSecondsRealtime(transitionTime);
         SceneManager.LoadScene(sceneIndex);
     }

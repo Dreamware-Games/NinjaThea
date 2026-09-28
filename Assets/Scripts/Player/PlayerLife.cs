@@ -8,6 +8,8 @@ public class PlayerLife : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private AudioSource deathSound;
 
+    private static readonly int DeathHash = Animator.StringToHash("Death");
+
     private bool isDead = false;
     private StageLoader stageLoader;
 
@@ -36,7 +38,7 @@ public class PlayerLife : MonoBehaviour
         isDead = true;
         ResetAllAnimatorTriggers();
         deathSound.Play();
-        animator.SetTrigger("Death");
+        animator.SetTrigger(DeathHash);
         rb.bodyType = RigidbodyType2D.Static;
     }
 

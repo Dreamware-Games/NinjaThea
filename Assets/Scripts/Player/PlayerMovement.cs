@@ -12,6 +12,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float jumpForce = 14f;
     [SerializeField] private LayerMask terrain;
 
+    private static readonly int StateHash = Animator.StringToHash("State");
+
     private PlayerLife playerLife;
     private FinishLine finishLine;
 
@@ -69,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             jump = false;
             coyoteTimeCounter = 0f;
             jumpBufferCounter = 0f;
-            animator.SetInteger("State", (int)MovementState.idle);
+            animator.SetInteger(StateHash, (int)MovementState.idle);
             return;
         }
 
@@ -130,7 +132,7 @@ public class PlayerMovement : MonoBehaviour
         else if (rb.linearVelocity.y < -.1f)
             state = MovementState.falling;
 
-        animator.SetInteger("State", (int)state);
+        animator.SetInteger(StateHash, (int)state);
     }
 
     private bool isGrounded()

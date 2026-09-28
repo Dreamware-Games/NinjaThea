@@ -20,7 +20,7 @@ public class EnemyPatrol : MonoBehaviour
         enemyScript = enemy.GetComponent<Enemy>();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (!enemyScript.IsDead() && !enemyScript.IsIdle())
         {

@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class ItemCollector : MonoBehaviour
 {
+    private static readonly int ItemCollectedHash = Animator.StringToHash("ItemCollected");
+
     [SerializeField] private AudioSource itemCollectedSound;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -14,7 +16,7 @@ public class ItemCollector : MonoBehaviour
                 item.Collected = true;
                 itemCollectedSound.Play();
                 GameManager.Instance.ItemCollected();
-                collision.gameObject.GetComponent<Animator>().SetTrigger("ItemCollected");
+                collision.gameObject.GetComponent<Animator>().SetTrigger(ItemCollectedHash);
                 // Item is destroyed by animator transition triggred by ItemCollected (OnStateExit)
             }
         }
