@@ -1,18 +1,21 @@
 using Steamworks;
 using UnityEngine;
 
-public class PromoLink : MonoBehaviour
+namespace NinjaThea.Steamworks.NET
 {
-    [SerializeField] private string storeAppID;
-
-    public void OpenStorePage()
+    public class PromoLink : MonoBehaviour
     {
-        if (SteamManager.Initialized)
+        [SerializeField] private string storeAppID;
+
+        public void OpenStorePage()
         {
-            SteamFriends.ActivateGameOverlayToStore(
-                new AppId_t(uint.Parse(storeAppID)),
-                EOverlayToStoreFlag.k_EOverlayToStoreFlag_None
-            );
+            if (SteamManager.Initialized)
+            {
+                SteamFriends.ActivateGameOverlayToStore(
+                    new AppId_t(uint.Parse(storeAppID)),
+                    EOverlayToStoreFlag.k_EOverlayToStoreFlag_None
+                );
+            }
         }
     }
 }

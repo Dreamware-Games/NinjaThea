@@ -1,7 +1,9 @@
-
-public interface IDataPersister
+namespace NinjaThea.DataPersistence
 {
-    GameData Load();
+    public interface IDataPersister
+    {
+        GameData Load();
 
-    void Save(GameData gameData);
+        void Save(GameData gameData);
+    }
 }

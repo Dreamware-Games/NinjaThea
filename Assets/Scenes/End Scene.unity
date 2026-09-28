@@ -394,7 +394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: {fileID: 0}
-  stage: 0
 --- !u!114 &395975416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,7 +508,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: {fileID: 0}
-  stage: 0
 --- !u!1 &461784152
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,7 +730,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 397177153}
-        m_TargetAssemblyTypeName: StageLoader, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.StageLoader, Assembly-CSharp
         m_MethodName: LoadStageByIndex
         m_Mode: 3
         m_Arguments:
@@ -2057,7 +2055,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 397177155}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.MainMenu, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:

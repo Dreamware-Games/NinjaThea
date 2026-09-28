@@ -1,7 +1,10 @@
-public enum MovementState
+namespace NinjaThea.Player
 {
-    idle,
-    running,
-    jumping,
-    falling,
+    public enum MovementState
+    {
+        idle,
+        running,
+        jumping,
+        falling,
+    }
 }

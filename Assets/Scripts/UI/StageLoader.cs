@@ -1,47 +1,43 @@
 using System.Collections;
+using NinjaThea.Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StageLoader : MonoBehaviour
+namespace NinjaThea.UI
 {
-
-    public static StageLoader Instance;
-
-    private static readonly int CrossfadeHash = Animator.StringToHash("Crossfade");
-
-    [SerializeField] private Animator crossfadeAnimator;
-    [SerializeField] private float transitionTime = 2f;
-
-    private void Awake()
+    public class StageLoader : Singleton<StageLoader>
     {
-        if (Instance != null && Instance != this)
+        private static readonly int CrossfadeHash = Animator.StringToHash("Crossfade");
+
+        [SerializeField] private Animator crossfadeAnimator;
+        [SerializeField] private float transitionTime = 2f;
+
+        private void Start()
         {
-            Destroy(gameObject);
-            return;
+            Time.timeScale = 1f;
+            PauseMenu.Paused = false;
         }
-        Instance = this;
-    }
 
-    private void Start()
-    {
-        Time.timeScale = 1f;
-        PauseMenu.Paused = false;
-    }
+        public void LoadNextStage()
+        {
+            StartCoroutine(LoadByIndex(SceneManager.GetActiveScene().buildIndex + 1));
+        }
 
-    public void LoadNextStage()
-    {
-        StartCoroutine(LoadByIndex(SceneManager.GetActiveScene().buildIndex + 1));
-    }
+        public void ReloadCurrentStage()
+        {
+            StartCoroutine(LoadByIndex(SceneManager.GetActiveScene().buildIndex));
+        }
 
-    public void LoadStageByIndex(int sceneIndex)
-    {
-        StartCoroutine(LoadByIndex(sceneIndex));
-    }
+        public void LoadStageByIndex(int sceneIndex)
+        {
+            StartCoroutine(LoadByIndex(sceneIndex));
+        }
 
-    IEnumerator LoadByIndex(int sceneIndex)
-    {
-        crossfadeAnimator.SetTrigger(CrossfadeHash);
-        yield return new WaitForSecondsRealtime(transitionTime);
-        SceneManager.LoadScene(sceneIndex);
+        private IEnumerator LoadByIndex(int sceneIndex)
+        {
+            crossfadeAnimator.SetTrigger(CrossfadeHash);
+            yield return new WaitForSecondsRealtime(transitionTime);
+            SceneManager.LoadScene(sceneIndex);
+        }
     }
 }

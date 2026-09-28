@@ -1,28 +1,23 @@
 using System;
+using NinjaThea.Managers;
 using Steamworks;
-using UnityEngine;
 
-public class SteamOverlayMonitor : MonoBehaviour
+namespace NinjaThea.Steamworks.NET
 {
-    public static event Action<bool> OnOverlayActiveChanged;
-    public static SteamOverlayMonitor Instance { get; private set; }
-
-    private Callback<GameOverlayActivated_t> overlayCallback;
-
-    private void Awake()
+    public class SteamOverlayMonitor : PersistentSingleton<SteamOverlayMonitor>
     {
-        if (Instance != null && Instance != this)
+        public static event Action<bool> OnOverlayActiveChanged;
+
+        private Callback<GameOverlayActivated_t> overlayCallback;
+
+        protected override void OnSingletonAwake()
         {
-            Destroy(gameObject);
-            return;
+            overlayCallback = Callback<GameOverlayActivated_t>.Create(OnOverlayEvent);
         }
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
-        overlayCallback = Callback<GameOverlayActivated_t>.Create(OnOverlayEvent);
-    }
 
-    private void OnOverlayEvent(GameOverlayActivated_t pCallback)
-    {
-        OnOverlayActiveChanged?.Invoke(pCallback.m_bActive != 0);
+        private void OnOverlayEvent(GameOverlayActivated_t pCallback)
+        {
+            OnOverlayActiveChanged?.Invoke(pCallback.m_bActive != 0);
+        }
     }
 }

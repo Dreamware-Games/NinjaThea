@@ -1,11 +1,14 @@
 using UnityEngine;
 
-public class ItemCollected : StateMachineBehaviour
+namespace NinjaThea.GameElements
 {
-
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+    public class ItemCollected : StateMachineBehaviour
     {
-        Destroy(animator.gameObject);
-    }
 
+        override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
+        {
+            Destroy(animator.gameObject);
+        }
+
+    }
 }

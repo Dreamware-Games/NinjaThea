@@ -123,7 +123,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429818704}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.MainMenu, Assembly-CSharp
         m_MethodName: ReloadCurrentScene
         m_Mode: 1
         m_Arguments:
@@ -1629,7 +1629,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429818704}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.MainMenu, Assembly-CSharp
         m_MethodName: LoadNextScene
         m_Mode: 1
         m_Arguments:
@@ -2280,7 +2280,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429818704}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.MainMenu, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
@@ -2562,7 +2562,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429818704}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.MainMenu, Assembly-CSharp
         m_MethodName: ReloadCurrentScene
         m_Mode: 1
         m_Arguments:
@@ -3116,7 +3116,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 429818704}
-        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_TargetAssemblyTypeName: NinjaThea.UI.MainMenu, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 3
         m_Arguments:
@@ -3761,7 +3761,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: {fileID: 0}
-  stage: 1
 --- !u!1 &8256643196637650060
 GameObject:
   m_ObjectHideFlags: 0

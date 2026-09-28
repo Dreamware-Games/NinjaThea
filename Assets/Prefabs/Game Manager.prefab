@@ -66,13 +66,12 @@ MonoBehaviour:
   customStageText: 
   countdownText: {fileID: 0}
   countdownSteps:
-  - Ready!
-  - Steady!
-  - GO!
-  countdownStepsAudio:
-  - {fileID: 825055189}
-  - {fileID: 1624373789}
-  - {fileID: 1624373790}
+  - text: Ready!
+    audio: {fileID: 825055189}
+  - text: Steady!
+    audio: {fileID: 1624373789}
+  - text: GO!
+    audio: {fileID: 1624373790}
 --- !u!82 &825055189
 AudioSource:
   m_ObjectHideFlags: 0

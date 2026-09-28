@@ -1,52 +1,48 @@
+using NinjaThea.Managers;
+using NinjaThea.Steamworks.NET;
 using UnityEngine;
 
-public class FinishLine : MonoBehaviour
+namespace NinjaThea.GameElements
 {
-
-    [SerializeField] private AudioSource finishLineCrossedSound;
-    [SerializeField] private string levelCompleteAchievementID;
-    [SerializeField] private bool isFinalStage;
-
-    private bool isFinished = false;
-    private bool unifinishedChecked = false;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class FinishLine : MonoBehaviour
     {
+        [SerializeField] private AudioSource finishLineCrossedSound;
+        [SerializeField] private string levelCompleteAchievementID;
+        [SerializeField] private bool isFinalStage;
 
-        if (collision.gameObject.CompareTag("Player") && GameManager.Instance.TasksCompleted)
+        private bool isFinished = false;
+        private bool unfinishedChecked = false;
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (!isFinished)
+            if (collision.gameObject.CompareTag("Player") && GameManager.Instance.TasksCompleted)
             {
-                isFinished = true;
-                finishLineCrossedSound.Play();
+                if (!isFinished)
+                {
+                    isFinished = true;
+                    finishLineCrossedSound.Play();
 
-                if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null)
-                    UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
+                    if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null)
+                        UserStatsHandler.Instance.PopAchievement(levelCompleteAchievementID);
 
-                if (!isFinalStage) GameManager.Instance.StageComplete();
-                else GameManager.Instance.GameComplete();
-
+                    if (!isFinalStage) GameManager.Instance.StageComplete();
+                    else GameManager.Instance.GameComplete();
+                }
+            }
+            else
+            {
+                GameManager.Instance.DisplayTasksNotCompleteWarningText();
+                if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null && !unfinishedChecked)
+                {
+                    unfinishedChecked = true; // Do it only once per scene load
+                    UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
+                }
             }
         }
-        else
+
+        public bool IsFinished()
         {
-            GameManager.Instance.DisplayTasksNotCompleteWarningText();
-            if (UserStatsHandler.Instance != null && levelCompleteAchievementID != null && !unifinishedChecked)
-            {
-                unifinishedChecked = true; // Do it only once per scene load
-                UserStatsHandler.Instance.PopAchievement("ACH_REACHED_EXIT_INCOMPLETE");
-            }
+            return isFinished;
         }
-
     }
-    public bool IsFinalStage()
-    {
-        return isFinalStage;
-    }
-
-    public bool IsFinished()
-    {
-        return isFinished;
-    }
-
 }

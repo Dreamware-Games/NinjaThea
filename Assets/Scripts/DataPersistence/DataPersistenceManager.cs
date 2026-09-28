@@ -1,74 +1,68 @@
-using UnityEngine;
 using System.IO;
+using NinjaThea.Managers;
+using UnityEngine;
 
-public class DataPersistenceManager : MonoBehaviour
+namespace NinjaThea.DataPersistence
 {
-
-    public static DataPersistenceManager Instance;
-
-    [SerializeField] private bool saveGameDataOnComplete;
-
-    public GameData SaveGameData { get; private set; }
-    private IDataPersister dataPersister;
-
-    private void Awake()
+    public class DataPersistenceManager : PersistentSingleton<DataPersistenceManager>
     {
-        if (Instance != null && Instance != this)
+        [SerializeField] private bool saveGameDataOnComplete;
+
+        public GameData SaveGameData { get; private set; }
+        private IDataPersister dataPersister;
+
+        protected override void OnSingletonAwake()
         {
-            Destroy(gameObject);
-            return;
+            MigrateOldSaveIfNeeded();
         }
-        Instance = this;
-        MigrateOldSaveIfNeeded();
-        DontDestroyOnLoad(gameObject);
-    }
 
-    private void Start()
-    {
-        dataPersister = new FileDataPersister();
-        LoadData();
-    }
-
-    private void MigrateOldSaveIfNeeded()
-    {
-        string newFilePath = Path.Combine(Application.persistentDataPath, "gamedata.ninja");
-        string oldFilePath = Path.Combine(Application.persistentDataPath.Replace("Dreamware Games", "Reza Mirzaei"), "gamedata.ninja");
-        if (File.Exists(oldFilePath) && !File.Exists(newFilePath))
+        private void Start()
         {
-            try
+            dataPersister = new FileDataPersister();
+            LoadData();
+        }
+
+        private void MigrateOldSaveIfNeeded()
+        {
+            string newFilePath = Path.Combine(Application.persistentDataPath, "gamedata.ninja");
+            string oldFilePath = Path.Combine(Application.persistentDataPath.Replace("Dreamware Games", "Reza Mirzaei"), "gamedata.ninja");
+            if (File.Exists(oldFilePath) && !File.Exists(newFilePath))
             {
-                Directory.CreateDirectory(Path.GetDirectoryName(newFilePath));
-                File.Copy(oldFilePath, newFilePath);
-                Debug.Log("Migrated old save file from old config to Dreamware Games.");
-            }
-            catch (System.Exception e)
-            {
-                Debug.LogError("Failed to migrate save file: " + e);
+                try
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(newFilePath));
+                    File.Copy(oldFilePath, newFilePath);
+                    Debug.Log("Migrated old save file from old config to Dreamware Games.");
+                }
+                catch (System.Exception e)
+                {
+                    Debug.LogError("Failed to migrate save file: " + e);
+                }
             }
         }
-    }
 
-    public void SaveData(LevelData levelData)
-    {
-        if (!saveGameDataOnComplete)
+        public void SaveData(LevelData levelData)
         {
-            Debug.LogWarning("Game not saved! Flag 'saveGameDataOnComplete is " + saveGameDataOnComplete);
-            return;
+            if (!saveGameDataOnComplete)
+            {
+                Debug.LogWarning("Game not saved! Flag 'saveGameDataOnComplete is " + saveGameDataOnComplete);
+                return;
+            }
+            if (SaveGameData == null)
+            {
+                SaveGameData = new GameData();
+            }
+            SaveGameData.UpdateLevelStatus(levelData);
+            dataPersister.Save(SaveGameData);
         }
-        if (SaveGameData == null)
-        {
-            SaveGameData = new GameData();
-        }
-        SaveGameData.UpdateLevelStatus(levelData);
-        dataPersister.Save(SaveGameData);
-    }
 
-    private void LoadData()
-    {
-        SaveGameData = dataPersister.Load();
-        if (SaveGameData == null)
+        private void LoadData()
         {
-            SaveGameData = new GameData();
+            SaveGameData = dataPersister.Load();
+            if (SaveGameData == null)
+            {
+                SaveGameData = new GameData();
+            }
         }
     }
 }

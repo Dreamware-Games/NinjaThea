@@ -1,39 +1,34 @@
-using System.Collections.Generic;
 using System;
+using System.Collections.Generic;
 
-[Serializable]
-public class GameData
+namespace NinjaThea.DataPersistence
 {
-    public List<LevelData> LevelStatus;
-
-    public GameData()
+    [Serializable]
+    public class GameData
     {
-        LevelStatus = new List<LevelData>();
-    }
+        public List<LevelData> LevelStatus;
 
-    public void UpdateLevelStatus(LevelData levelData)
-    {
-        // Avoid duplicates and only write over if better time
-        int index = LevelStatus.FindIndex(ld => ld.Equals(levelData));
-        if (index != -1)
+        public GameData()
         {
-            LevelData allreadyPassedLevelData = LevelStatus[index];
-            // Check if levelData.CompletionTime is less than allreadyPassedLevelData.CompletionTime
-            // If so, replace ('cuz new one is better)
-            if (String.Compare(levelData.CompletionTime, allreadyPassedLevelData.CompletionTime) < 0)
-            {
-                LevelStatus[index] = levelData;
-            }
-            return;
+            LevelStatus = new List<LevelData>();
         }
 
-        LevelStatus.Add(levelData);
-    }
+        public void UpdateLevelStatus(LevelData levelData)
+        {
+            // Avoid duplicates and only write over if better time
+            int index = LevelStatus.FindIndex(ld => ld.Equals(levelData));
+            if (index != -1)
+            {
+                LevelData alreadyPassedLevelData = LevelStatus[index];
+                // Replace if the new completion time is better (less)
+                if (string.Compare(levelData.CompletionTime, alreadyPassedLevelData.CompletionTime) < 0)
+                {
+                    LevelStatus[index] = levelData;
+                }
+                return;
+            }
 
-    public override string ToString()
-    {
-        // TODO Make better!!
-        return "GameData: " + LevelStatus.Count;
+            LevelStatus.Add(levelData);
+        }
     }
-
 }

@@ -1,46 +1,49 @@
-using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.EventSystems;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
-public class DefaultButtonHighlighter : MonoBehaviour
+namespace NinjaThea.UI
 {
-    [SerializeField] private Button defaultHighlightedButton;
-
-    private readonly WaitForSecondsRealtime waitReselect = new WaitForSecondsRealtime(3f);
-
-    private Coroutine checkCoroutine;
-
-    private void OnEnable()
+    public class DefaultButtonHighlighter : MonoBehaviour
     {
-        HighlightDefaultButton();
-        if (checkCoroutine != null) StopCoroutine(checkCoroutine);
-        checkCoroutine = StartCoroutine(ReselectIfNoneSelected());
-    }
+        [SerializeField] private Button defaultHighlightedButton;
 
-    private void OnDisable()
-    {
-        if (checkCoroutine != null)
-            StopCoroutine(checkCoroutine);
-    }
+        private readonly WaitForSecondsRealtime waitReselect = new WaitForSecondsRealtime(3f);
 
-    public void HighlightDefaultButton()
-    {
-        if (defaultHighlightedButton == null) return;
-        EventSystem.current.SetSelectedGameObject(null);
-        if (!defaultHighlightedButton.gameObject.activeInHierarchy || !defaultHighlightedButton.interactable) return;
-        EventSystem.current.SetSelectedGameObject(defaultHighlightedButton.gameObject);
-    }
+        private Coroutine checkCoroutine;
 
-    private IEnumerator ReselectIfNoneSelected()
-    {
-        while (true)
+        private void OnEnable()
         {
-            yield return waitReselect;
+            HighlightDefaultButton();
+            if (checkCoroutine != null) StopCoroutine(checkCoroutine);
+            checkCoroutine = StartCoroutine(ReselectIfNoneSelected());
+        }
 
-            if (EventSystem.current.currentSelectedGameObject == null)
+        private void OnDisable()
+        {
+            if (checkCoroutine != null)
+                StopCoroutine(checkCoroutine);
+        }
+
+        public void HighlightDefaultButton()
+        {
+            if (defaultHighlightedButton == null) return;
+            EventSystem.current.SetSelectedGameObject(null);
+            if (!defaultHighlightedButton.gameObject.activeInHierarchy || !defaultHighlightedButton.interactable) return;
+            EventSystem.current.SetSelectedGameObject(defaultHighlightedButton.gameObject);
+        }
+
+        private IEnumerator ReselectIfNoneSelected()
+        {
+            while (true)
             {
-                HighlightDefaultButton();
+                yield return waitReselect;
+
+                if (EventSystem.current.currentSelectedGameObject == null)
+                {
+                    HighlightDefaultButton();
+                }
             }
         }
     }

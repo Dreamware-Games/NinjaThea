@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class ButtonSelector : MonoBehaviour, IPointerEnterHandler
+namespace NinjaThea.UI
 {
-    public void OnPointerEnter(PointerEventData eventData)
+    public class ButtonSelector : MonoBehaviour, IPointerEnterHandler
     {
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(gameObject);
+        public void OnPointerEnter(PointerEventData eventData)
+        {
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(gameObject);
+        }
     }
 }

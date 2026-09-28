@@ -1,25 +1,29 @@
+using NinjaThea.Managers;
 using UnityEngine;
 
-public class ItemCollector : MonoBehaviour
+namespace NinjaThea.GameElements
 {
-    private static readonly int ItemCollectedHash = Animator.StringToHash("ItemCollected");
-
-    [SerializeField] private AudioSource itemCollectedSound;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class ItemCollector : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("Collectible"))
+        private static readonly int ItemCollectedHash = Animator.StringToHash("ItemCollected");
+
+        [SerializeField] private AudioSource itemCollectedSound;
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            Item item = collision.gameObject.transform.GetComponent<Item>();
-            if (!item.Collected)
+            if (collision.gameObject.CompareTag("Collectible"))
             {
-                item.Collected = true;
-                itemCollectedSound.Play();
-                GameManager.Instance.ItemCollected();
-                collision.gameObject.GetComponent<Animator>().SetTrigger(ItemCollectedHash);
-                // Item is destroyed by animator transition triggred by ItemCollected (OnStateExit)
+                Item item = collision.gameObject.transform.GetComponent<Item>();
+                if (!item.Collected)
+                {
+                    item.Collected = true;
+                    itemCollectedSound.Play();
+                    GameManager.Instance.ItemCollected();
+                    collision.gameObject.GetComponent<Animator>().SetTrigger(ItemCollectedHash);
+                    // Item is destroyed by animator transition triggred by ItemCollected (OnStateExit)
+                }
             }
         }
-    }
 
+    }
 }

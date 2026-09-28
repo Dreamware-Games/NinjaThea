@@ -9582,10 +9582,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1851573529}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
-      propertyPath: hudContainer
-      value: 
-      objectReference: {fileID: 560678252}
-    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: countdownText
       value: 
       objectReference: {fileID: 2108962885}

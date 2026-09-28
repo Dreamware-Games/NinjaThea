@@ -1,34 +1,37 @@
 using System;
 
-[Serializable]
-public class LevelData
+namespace NinjaThea.DataPersistence
 {
-    public string LevelName;
-    public string CompletionTime;
-    public int StageIndex;
-
-    public LevelData(string levelName, string completionTime, int stageIndex)
+    [Serializable]
+    public class LevelData
     {
-        LevelName = levelName;
-        CompletionTime = completionTime;
-        StageIndex = stageIndex;
+        public string LevelName;
+        public string CompletionTime;
+        public int StageIndex;
 
-    }
+        public LevelData(string levelName, string completionTime, int stageIndex)
+        {
+            LevelName = levelName;
+            CompletionTime = completionTime;
+            StageIndex = stageIndex;
 
-    public override int GetHashCode()
-    {
-        return LevelName.GetHashCode();
-    }
+        }
 
-    public override bool Equals(object obj)
-    {
-        LevelData levelData = obj as LevelData;
-        return levelData != null
-            && String.Equals(this.LevelName, levelData.LevelName);
-    }
+        public override int GetHashCode()
+        {
+            return LevelName.GetHashCode();
+        }
 
-    public override string ToString()
-    {
-        return LevelName + ": " + CompletionTime;
+        public override bool Equals(object obj)
+        {
+            LevelData levelData = obj as LevelData;
+            return levelData != null
+                && string.Equals(LevelName, levelData.LevelName);
+        }
+
+        public override string ToString()
+        {
+            return LevelName + ": " + CompletionTime;
+        }
     }
 }

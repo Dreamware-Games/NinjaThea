@@ -1,66 +1,62 @@
+using NinjaThea.UI;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class PlayerLife : MonoBehaviour
+namespace NinjaThea.Player
 {
-
-    [SerializeField] private Animator animator;
-    [SerializeField] private Rigidbody2D rb;
-    [SerializeField] private AudioSource deathSound;
-
-    private static readonly int DeathHash = Animator.StringToHash("Death");
-
-    private bool isDead = false;
-    private StageLoader stageLoader;
-
-    private void Start()
+    public class PlayerLife : MonoBehaviour
     {
-        stageLoader = FindFirstObjectByType<StageLoader>();
-    }
+        [SerializeField] private Animator animator;
+        [SerializeField] private Rigidbody2D rb;
+        [SerializeField] private AudioSource deathSound;
 
-    private void Update()
-    {
-        if (!isDead && transform.position.y < -15) Die();
-    }
+        private static readonly int DeathHash = Animator.StringToHash("Death");
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Trap")) Die();
-    }
+        private bool isDead = false;
 
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.gameObject.CompareTag("Enemy")) Die();
-    }
-
-    private void Die()
-    {
-        isDead = true;
-        ResetAllAnimatorTriggers();
-        deathSound.Play();
-        animator.SetTrigger(DeathHash);
-        rb.bodyType = RigidbodyType2D.Static;
-    }
-
-    public void Restart()
-    {
-        stageLoader.LoadStageByIndex(SceneManager.GetActiveScene().buildIndex);
-    }
-
-    public bool IsDead()
-    {
-        return isDead;
-    }
-
-    private void ResetAllAnimatorTriggers()
-    {
-        foreach (var trigger in animator.parameters)
+        private void Update()
         {
-            if (trigger.type == AnimatorControllerParameterType.Trigger)
+            if (!isDead && transform.position.y < -15) Die();
+        }
+
+        private void OnCollisionEnter2D(Collision2D collision)
+        {
+            if (collision.gameObject.CompareTag("Trap")) Die();
+        }
+
+        private void OnTriggerEnter2D(Collider2D collider)
+        {
+            if (collider.gameObject.CompareTag("Enemy")) Die();
+        }
+
+        private void Die()
+        {
+            isDead = true;
+            ResetAllAnimatorTriggers();
+            deathSound.Play();
+            animator.SetTrigger(DeathHash);
+            rb.bodyType = RigidbodyType2D.Static;
+        }
+
+        // Animation event calls this
+        public void Restart()
+        {
+            StageLoader.Instance.ReloadCurrentStage();
+        }
+
+        public bool IsDead()
+        {
+            return isDead;
+        }
+
+        private void ResetAllAnimatorTriggers()
+        {
+            foreach (var trigger in animator.parameters)
             {
-                animator.ResetTrigger(trigger.name);
+                if (trigger.type == AnimatorControllerParameterType.Trigger)
+                {
+                    animator.ResetTrigger(trigger.name);
+                }
             }
         }
     }
-
 }

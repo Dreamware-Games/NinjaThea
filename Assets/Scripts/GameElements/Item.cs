@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public class Item : MonoBehaviour
+namespace NinjaThea.GameElements
 {
-    public bool Collected = false;
+    public class Item : MonoBehaviour
+    {
+        public bool Collected { get; set; }
+    }
 }

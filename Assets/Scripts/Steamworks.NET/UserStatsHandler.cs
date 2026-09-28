@@ -1,39 +1,31 @@
-using UnityEngine;
+using NinjaThea.Managers;
 using Steamworks;
+using UnityEngine;
 
-public class UserStatsHandler : MonoBehaviour
+namespace NinjaThea.Steamworks.NET
 {
-    public static UserStatsHandler Instance;
-
-    [SerializeField] private bool updateStats;
-
-    private void Awake()
+    // Lives on the Steam Manager object, which SteamManager keeps across scene loads
+    public class UserStatsHandler : Singleton<UserStatsHandler>
     {
-        if (Instance != null && Instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
-        Instance = this;
-    }
+        [SerializeField] private bool updateStats;
 
-    public void PopAchievement(string achievementID)
-    {
-        if (!updateStats)
+        public void PopAchievement(string achievementID)
         {
-            Debug.LogWarning($"Achievement {achievementID} not popped because 'updateStats' is false");
-            return;
-        }
-
-        if (achievementID != null && SteamManager.Initialized)
-        {
-            SteamUserStats.GetAchievement(achievementID, out bool achievementUnlocked);
-            if (!achievementUnlocked)
+            if (!updateStats)
             {
-                SteamUserStats.SetAchievement(achievementID);
-                SteamUserStats.StoreStats();
+                Debug.LogWarning($"Achievement {achievementID} not popped because 'updateStats' is false");
+                return;
+            }
+
+            if (achievementID != null && SteamManager.Initialized)
+            {
+                SteamUserStats.GetAchievement(achievementID, out bool achievementUnlocked);
+                if (!achievementUnlocked)
+                {
+                    SteamUserStats.SetAchievement(achievementID);
+                    SteamUserStats.StoreStats();
+                }
             }
         }
     }
-
 }

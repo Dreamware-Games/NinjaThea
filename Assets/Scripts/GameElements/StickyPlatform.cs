@@ -1,21 +1,24 @@
 using UnityEngine;
 
-public class StickyPlatform : MonoBehaviour
+namespace NinjaThea.GameElements
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    public class StickyPlatform : MonoBehaviour
     {
-        if (collision.gameObject.CompareTag("Player"))
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            collision.gameObject.transform.SetParent(transform);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.transform.SetParent(transform);
+            }
         }
-    }
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
+        private void OnTriggerExit2D(Collider2D collision)
         {
-            collision.gameObject.transform.SetParent(null);
+            if (collision.gameObject.CompareTag("Player"))
+            {
+                collision.gameObject.transform.SetParent(null);
+            }
         }
-    }
 
+    }
 }

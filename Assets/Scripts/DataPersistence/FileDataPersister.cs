@@ -2,60 +2,63 @@ using System;
 using System.IO;
 using UnityEngine;
 
-public class FileDataPersister : IDataPersister
+namespace NinjaThea.DataPersistence
 {
-
-    private string filePath = Path.Combine(Application.persistentDataPath, "gamedata.ninja");
-
-    public void Save(GameData gameData)
+    public class FileDataPersister : IDataPersister
     {
-        try
-        {
-            Directory.CreateDirectory(Path.GetDirectoryName(filePath));
-            string gameDataJson = JsonUtility.ToJson(gameData, true);
-            using (FileStream stream = new FileStream(filePath, FileMode.Create))
-            {
-                using (StreamWriter writer = new StreamWriter(stream))
-                {
-                    writer.Write(gameDataJson);
-                }
-            }
-        }
-        catch (Exception e)
-        {
-            Debug.LogError(e);
-        }
 
-    }
+        private string filePath = Path.Combine(Application.persistentDataPath, "gamedata.ninja");
 
-    public GameData Load()
-    {
-        GameData loadedGameData = null;
-        if (File.Exists(filePath))
+        public void Save(GameData gameData)
         {
             try
             {
-                string gameDataJson = null;
-                using (FileStream stream = new FileStream(filePath, FileMode.Open))
+                Directory.CreateDirectory(Path.GetDirectoryName(filePath));
+                string gameDataJson = JsonUtility.ToJson(gameData, true);
+                using (FileStream stream = new FileStream(filePath, FileMode.Create))
                 {
-                    using (StreamReader reader = new StreamReader(stream))
+                    using (StreamWriter writer = new StreamWriter(stream))
                     {
-                        gameDataJson = reader.ReadToEnd();
+                        writer.Write(gameDataJson);
                     }
                 }
-                if (gameDataJson == null)
-                {
-                    return null;
-                }
-                loadedGameData = JsonUtility.FromJson<GameData>(gameDataJson);
             }
             catch (Exception e)
             {
                 Debug.LogError(e);
-                return null;
             }
-        }
-        return loadedGameData;
-    }
 
+        }
+
+        public GameData Load()
+        {
+            GameData loadedGameData = null;
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    string gameDataJson = null;
+                    using (FileStream stream = new FileStream(filePath, FileMode.Open))
+                    {
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            gameDataJson = reader.ReadToEnd();
+                        }
+                    }
+                    if (gameDataJson == null)
+                    {
+                        return null;
+                    }
+                    loadedGameData = JsonUtility.FromJson<GameData>(gameDataJson);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError(e);
+                    return null;
+                }
+            }
+            return loadedGameData;
+        }
+
+    }
 }

@@ -1,47 +1,45 @@
+using NinjaThea.Managers;
 using TMPro;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+namespace NinjaThea.UI
 {
-
-    [SerializeField] private TextMeshProUGUI version;
-    [SerializeField] private bool stage; // Stupid because this script is also used in stages :(
-
-    private StageLoader stageLoader;
-
-    private void Start()
+    public class MainMenu : MonoBehaviour
     {
-        if (!stage)
+        [SerializeField] private TextMeshProUGUI version;
+
+        private void Start()
         {
-            Cursor.visible = true;
-            if (version != null) version.text = Application.version;
+            // Stages have a GameManager that owns the cursor; menu and end scenes don't
+            if (GameManager.Instance == null)
+            {
+                Cursor.visible = true;
+                if (version != null) version.text = Application.version;
+            }
         }
-        stageLoader = FindFirstObjectByType<StageLoader>();
-    }
 
-    public void ReloadCurrentScene()
-    {
-        stageLoader.LoadStageByIndex(SceneManager.GetActiveScene().buildIndex);
-    }
+        public void ReloadCurrentScene()
+        {
+            StageLoader.Instance.ReloadCurrentStage();
+        }
 
-    public void LoadNextScene()
-    {
-        stageLoader.LoadNextStage();
-    }
+        public void LoadNextScene()
+        {
+            StageLoader.Instance.LoadNextStage();
+        }
 
-    public void LoadScene(int index)
-    {
-        stageLoader.LoadStageByIndex(index);
-    }
+        public void LoadScene(int index)
+        {
+            StageLoader.Instance.LoadStageByIndex(index);
+        }
 
-    public void QuitGame()
-    {
+        public void QuitGame()
+        {
 #if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
 #else
-    Application.Quit();
+            Application.Quit();
 #endif
+        }
     }
-
 }
