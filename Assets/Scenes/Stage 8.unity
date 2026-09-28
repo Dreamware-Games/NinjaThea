@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 33237105}
   - component: {fileID: 33237106}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGb (2)
+  m_Name: Red Plains BGb (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -322,7 +322,7 @@ GameObject:
   - component: {fileID: 72813297}
   - component: {fileID: 72813298}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGb (1)
+  m_Name: Red Plains BGb (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1544,7 +1544,7 @@ GameObject:
   - component: {fileID: 522968180}
   - component: {fileID: 522968181}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGa
+  m_Name: Red Plains BGa
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1706,7 +1706,7 @@ GameObject:
   - component: {fileID: 582740877}
   - component: {fileID: 582740878}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGb (3)
+  m_Name: Red Plains BGb (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1957,7 +1957,7 @@ GameObject:
   - component: {fileID: 619985829}
   - component: {fileID: 619985830}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGe (2)
+  m_Name: Red Plains BGd (2)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2713,7 +2713,7 @@ GameObject:
   - component: {fileID: 971387314}
   - component: {fileID: 971387315}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGb (4)
+  m_Name: Red Plains BGb (4)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3352,7 +3352,7 @@ GameObject:
   - component: {fileID: 1216650455}
   - component: {fileID: 1216650456}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGe (1)
+  m_Name: Red Plains BGd (1)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3454,7 +3454,7 @@ GameObject:
   - component: {fileID: 1292548989}
   - component: {fileID: 1292548990}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGe (4)
+  m_Name: Red Plains BGd (4)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4147,7 +4147,7 @@ GameObject:
   - component: {fileID: 1694650603}
   - component: {fileID: 1694650602}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGe
+  m_Name: Red Plains BGd
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9377,7 +9377,7 @@ GameObject:
   - component: {fileID: 1750680707}
   - component: {fileID: 1750680706}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGb
+  m_Name: Red Plains BGb
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10327,7 +10327,7 @@ GameObject:
   - component: {fileID: 2039744010}
   - component: {fileID: 2039744011}
   m_Layer: 6
-  m_Name: Ice Pink Mountains BGe (3)
+  m_Name: Red Plains BGd (3)
   m_TagString: Background
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10695,6 +10695,10 @@ PrefabInstance:
       propertyPath: itemsContainer
       value: 
       objectReference: {fileID: 1166502540}
+    - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
+      propertyPath: itemLabel
+      value: Melons
+      objectReference: {fileID: 0}
     - target: {fileID: 4509868596666571655, guid: a7034bc394b02d9409597efc00b3efb2, type: 3}
       propertyPath: backgroundMusic
       value: 

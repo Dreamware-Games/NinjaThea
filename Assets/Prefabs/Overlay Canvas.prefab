@@ -1800,6 +1800,7 @@ GameObject:
   - component: {fileID: 1516768371}
   - component: {fileID: 1516768370}
   - component: {fileID: 8256643196118948323}
+  - component: {fileID: 6167504544806004736}
   m_Layer: 5
   m_Name: Stage Complete Container
   m_TagString: Untagged
@@ -3559,6 +3560,7 @@ GameObject:
   - component: {fileID: 7078597205676226872}
   - component: {fileID: 7821711124944556721}
   - component: {fileID: 3593994913955802856}
+  - component: {fileID: 6372489046115113984}
   m_Layer: 5
   m_Name: Game Complete Container
   m_TagString: Untagged
@@ -4075,3 +4077,29 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &6167504544806004736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516768368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6e38eb628d464ba9b9fe9c2bd68fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 1266733416}
+--- !u!114 &6372489046115113984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7374653390226982574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe6e38eb628d464ba9b9fe9c2bd68fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeText: {fileID: 174446292678743004}

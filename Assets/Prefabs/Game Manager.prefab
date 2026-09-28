@@ -51,8 +51,10 @@ MonoBehaviour:
   GamePlaying: 0
   backgroundMusic: {fileID: 0}
   itemsContainer: {fileID: 0}
+  itemLabel: 
   itemText: {fileID: 0}
   enemiesContainer: {fileID: 0}
+  enemyLabel: Mice
   enemyText: {fileID: 0}
   hudContainer: {fileID: 0}
   stageCompleteContainer: {fileID: 0}

@@ -76,7 +76,7 @@ namespace NinjaThea.Player
                 jump = false;
                 coyoteTimeCounter = 0f;
                 jumpBufferCounter = 0f;
-                animator.SetInteger(StateHash, (int)MovementState.idle);
+                animator.SetInteger(StateHash, (int)MovementState.Idle);
                 return;
             }
 
@@ -118,7 +118,7 @@ namespace NinjaThea.Player
 
             if (horizontalMove != 0f)
             {
-                state = MovementState.running;
+                state = MovementState.Running;
 
                 if ((horizontalMove < 0f && facingRight) ||
                     (horizontalMove > 0f && !facingRight))
@@ -129,13 +129,13 @@ namespace NinjaThea.Player
             }
             else
             {
-                state = MovementState.idle;
+                state = MovementState.Idle;
             }
 
             if (rb.linearVelocity.y > .1f)
-                state = MovementState.jumping;
+                state = MovementState.Jumping;
             else if (rb.linearVelocity.y < -.1f)
-                state = MovementState.falling;
+                state = MovementState.Falling;
 
             animator.SetInteger(StateHash, (int)state);
         }

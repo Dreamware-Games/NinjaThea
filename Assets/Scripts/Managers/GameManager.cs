@@ -25,8 +25,10 @@ namespace NinjaThea.Managers
 
         [SerializeField] private AudioSource backgroundMusic;
         [SerializeField] private GameObject itemsContainer;
+        [SerializeField] private string itemLabel;
         [SerializeField] private TextMeshProUGUI itemText;
         [SerializeField] private GameObject enemiesContainer;
+        [SerializeField] private string enemyLabel = "Mice";
         [SerializeField] private TextMeshProUGUI enemyText;
         [SerializeField] private GameObject stageCompleteContainer;
         [SerializeField] private GameObject gameCompleteContainer;
@@ -46,10 +48,8 @@ namespace NinjaThea.Managers
         private static readonly WaitForSeconds waitHalfSecond = new WaitForSeconds(.5f);
 
         private int numTotalItems;
-        private string itemName;
         private int numItemsCollected;
         private int numTotalEnemies;
-        private string enemyName;
         private int numEnemiesKilled;
         private float timeToAppear = 3f;
         private float timeWhenDisappear;
@@ -67,15 +67,13 @@ namespace NinjaThea.Managers
             currentSceneName = SceneManager.GetActiveScene().name;
             currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
 
-            itemName = itemsContainer.transform.name;
             numTotalItems = itemsContainer.transform.childCount;
             numItemsCollected = 0;
-            itemText.text = $"{itemName}: {numItemsCollected}/{numTotalItems}";
+            itemText.text = $"{itemLabel}: {numItemsCollected}/{numTotalItems}";
 
-            enemyName = enemiesContainer.transform.name;
             numTotalEnemies = enemiesContainer.transform.childCount;
             numEnemiesKilled = 0;
-            enemyText.text = $"{enemyName}: {numEnemiesKilled}/{numTotalEnemies}";
+            enemyText.text = $"{enemyLabel}: {numEnemiesKilled}/{numTotalEnemies}";
 
             timeText.text = "Time: 00:00.00";
             SetBestText();
@@ -169,14 +167,14 @@ namespace NinjaThea.Managers
         public void ItemCollected()
         {
             numItemsCollected++;
-            itemText.text = $"{itemName}: {numItemsCollected}/{numTotalItems}";
+            itemText.text = $"{itemLabel}: {numItemsCollected}/{numTotalItems}";
             UpdateTasksCompleted();
         }
 
         public void EnemyKilled()
         {
             numEnemiesKilled++;
-            enemyText.text = $"{enemyName}: {numEnemiesKilled}/{numTotalEnemies}";
+            enemyText.text = $"{enemyLabel}: {numEnemiesKilled}/{numTotalEnemies}";
             UpdateTasksCompleted();
         }
 
@@ -187,18 +185,17 @@ namespace NinjaThea.Managers
 
         public void StageComplete()
         {
-            Complete(stageCompleteContainer, "Stage Complete Time Text", loadingNextStageText, "Loading next stage in ");
+            Complete(stageCompleteContainer, loadingNextStageText, "Loading next stage in ");
         }
 
         public void GameComplete()
         {
-            Complete(gameCompleteContainer, "Game Complete Time Text", endingGameText, "Ending game in ");
+            Complete(gameCompleteContainer, endingGameText, "Ending game in ");
         }
 
-        private void Complete(GameObject container, string timeTextName, TextMeshProUGUI countdownLabel, string countdownPrefix)
+        private void Complete(GameObject container, TextMeshProUGUI countdownLabel, string countdownPrefix)
         {
-            TextMeshProUGUI completedTimeText = container.transform.Find(timeTextName).GetComponent<TextMeshProUGUI>();
-            PrepareStageCompletion(completedTimeText);
+            PrepareStageCompletion(container.GetComponent<CompletionPanel>().TimeText);
             container.SetActive(true);
             StartCoroutine(CountdownThenLoadNextStage(countdownLabel, countdownPrefix));
         }
